@@ -13,7 +13,10 @@ const typeDefs = gql`
     description: String
     genres: [String] 
     influences: [String]
+    currentProjects: [String]
     pastProjects: [String]
+    videoLink: String
+    audioLink: String
  }
 
  type Post {
