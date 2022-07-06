@@ -20,6 +20,37 @@ const userSchema = new Schema(
       required: true,
       minlength: 5,
     },
+    age: {
+      type: Integer,
+      required: true,
+    },
+    instrumnet: [
+      {
+        type: String,
+      },
+    ],
+    image: {
+      type: String,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    genres: [
+      {
+        type: String,
+      },
+    ],
+    influences: [
+      {
+        type: String,
+      },
+    ],
+    pastProjects: [
+      {
+        type: String,
+      },
+    ],
     Posts: [
       {
         type: Schema.Types.ObjectId,
