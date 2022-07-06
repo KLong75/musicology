@@ -46,11 +46,23 @@ const userSchema = new Schema(
         type: String,
       },
     ],
+    currentProjects: [
+      {
+        type: String,
+      },
+    ],
     pastProjects: [
       {
         type: String,
       },
     ],
+    videoLink: {
+      type: String,
+    },
+    audioLink: {
+      type: String,
+    },
+
     Posts: [
       {
         type: Schema.Types.ObjectId,
