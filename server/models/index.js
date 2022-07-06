@@ -1,5 +1,5 @@
 const User = require('./User');
-const PostAvailable = require('./PostAvailable');
-const PostSeeking = require('./PostSeeking');
+const Post = require('./Post');
 
-module.exports = { User, PostAvailable, PostSeeking };
+
+module.exports = { User, Post };
