@@ -44,10 +44,68 @@ const typeDefs = gql`
   }
 
  type Mutation {
-   login(email: String!, password: String!): Auth
-   addUser(username: String!, email: String!, password: String!): Auth
-   addPost(postText: String!): Post
-   addResponse(postId: ID!, responseText: String!): Thought
+   login(
+     email: String!, 
+     password: String!
+   ): Auth
+
+   addUser(
+     username: String!, 
+     email: String!, 
+     password: String!, 
+     location: String!, 
+     age: Int, 
+     instrument:[String]!, 
+     description: String!, 
+     genres: [String], 
+     influences: [String], 
+     pastProjects: [String], 
+     currentProjects[String], 
+     videoLink: String, 
+     audioLink:String
+   ): Auth
+
+   addPost(
+     postText: String!
+   ): Post
+
+   addResponse(
+     postId: ID!, 
+     responseText: String!
+   ): Response
+
+   updateUser(
+     username: String, 
+     email: String, 
+     password: String, 
+     location: String, 
+     age: Int, 
+     instrument:[String], 
+     description: String, 
+     genres: [String], 
+     influences: [String], 
+     pastProjects: [String], 
+     currentProjects[String], 
+     videoLink: String, 
+     audioLink:String
+   ): Auth
+
+   deleteUser(
+     _id: ID
+   ): Auth
+
+   updatePost(
+     postText: String!
+   ): Post
+
+   deletePost(
+     postId: ID  
+   ) 
+
+   deleteResponse(
+    postId: ID!, 
+    responseId: ID!
+  ): Response
  }
 
  type Auth {
