@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './guitar-12793.png';
 import './App.css';
 
