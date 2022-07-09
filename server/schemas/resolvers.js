@@ -87,17 +87,17 @@ const resolvers = {
 
     // },
 
-    deleteUser: async (parent, { userId }, context) => {
-      if (context.user) {
-        const removedUser = await User.findOneAndDelete(
-          {_id: context.user._id },
-          { $pull: { users: { userId } }},
-          { new: true }
-        );
-        return removedUser;
-        }
-        throw new AuthenticationError('You must be logged in to do that.')
-    },
+    // deleteUser: async (parent, args, context) => {
+    //   if (context.user) {
+    //     const removedUser = await User.findOneAndDelete(
+    //       {_id: context.user._id },
+    //       { $pull: { users: { User } }},
+    //       { new: true }
+    //     );
+    //     return;
+    //     }
+    //     throw new AuthenticationError('You must be logged in to do that.')
+    // },
 
     // updatePost: async (parent, { postId }, context) => {
 

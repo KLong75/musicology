@@ -69,11 +69,11 @@ const typeDefs = gql`
               influences: String, pastProjects: String, currentProjects: String, 
               videoLink: String, audioLink:String): Auth
 
-   deleteUser(_id: ID): Auth
+   deleteUser(userId: ID!): Auth
 
    updatePost(postText: String!): Post
 
-   deletePost(postId: ID): Post
+   deletePost(postId: ID!): Post
 
    deleteResponse(postId: ID!, responseId: ID!): Post        
   }
@@ -82,100 +82,3 @@ const typeDefs = gql`
 // export typeDefs
 module.exports = typeDefs;
 
-
-
-
-
-
-
-
-
-
-
-
-// location: String
-//     age: Int
-//     instrument: [String]
-//     image: String
-//     description: String
-//     genres: [String] 
-//     influences: [String]
-//     currentProjects: [String]
-//     pastProjects: [String]
-//     videoLink: String
-//     audioLink: String
-//  }
-
-//  type Post {
-//    _id: ID
-//    postText: String
-//    createdAt: String
-//    username: String
-//    responseCount: Int
-//    responses: [Response]
-//  }
-
-//  type Response {
-//    _id: ID
-//    responseText: String
-//    createdAt: String
-//    username: String
-//  }
-
-//  
-//      location: String!, 
-  //      age: Int, 
-  //      instrument:[String]!, 
-  //      description: String!, 
-  //      genres: [String], 
-  //      influences: [String], 
-  //      pastProjects: [String], 
-  //      currentProjects[String], 
-  //      videoLink: String, 
-  //      audioLink:String
-//  
-
-//    addPost(
-//      postText: String!
-//    ): Post
-
-//    addResponse(
-//      postId: ID!, 
-//      responseText: String!
-//    ): Response
-
-//    updateUser(
-//      username: String, 
-//      email: String, 
-//      password: String, 
-//      location: String, 
-//      age: Int, 
-//      instrument:[String], 
-//      description: String, 
-//      genres: [String], 
-//      influences: [String], 
-//      pastProjects: [String], 
-//      currentProjects[String], 
-//      videoLink: String, 
-//      audioLink:String
-//    ): Auth
-
-//    deleteUser(
-//      _id: ID
-//    ): Auth
-
-//    updatePost(
-//      postText: String!
-//    ): Post
-
-//    deletePost(
-//      postId: ID  
-//    ) 
-
-//    deleteResponse(
-//     postId: ID!, 
-//     responseId: ID!
-//   ): Response
-//  }
-
-//  
