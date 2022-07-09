@@ -71,9 +71,20 @@ const resolvers = {
       }
       throw new AuthenticationError('you need to be logged in');
     },
-
-
-
+    deletePost: async (parent, { postId }, context) => {
+      if (context.user) {
+        try {
+          const deletedPost = await Post.findByIdAndDelete(postId);
+        return {
+          ...deletedPost._doc,
+          _id: deletedPost.id,
+          createdAt: new Date(deletedPost._doc.createdAt).toISOString(),
+        }
+       } catch (error) {
+        throw error
+       }
+      }
+    },
     addResponse: async (parent, { postId, responseText }, context) => {
       if (context.user) {
         const updatedPost = await Post.findOneAndUpdate(
@@ -85,6 +96,15 @@ const resolvers = {
       }
       throw new AuthenticationError('you need to be logged in');
     },
+
+
+    // updatePost: async (parent, { postId }, context) => {
+
+    // },
+
+    // deleteResponse: async (parent, { postId }, context) => {
+
+    // }
 
     // updateUser: async (parent, { userId }, context) => {
 
@@ -102,28 +122,6 @@ const resolvers = {
     //     throw new AuthenticationError('You must be logged in to do that.')
     // },
 
-    // updatePost: async (parent, { postId }, context) => {
-
-    // },
-
-     deletePost: async (parent, { postId }, context) => {
-       if (context.user) {
-      try {
-      const deletedPost = await Post.findByIdAndDelete(postId);
-      return {
-          ...deletedPost._doc,
-          _id: deletedPost.id,
-          createdAt: new Date(deletedPost._doc.createdAt).toISOString(),
-        }
-      } catch (error) {
-         throw error
-      }
-     }
-    },
-
-    // deleteResponse: async (parent, { postId }, context) => {
-
-    // }
   }
 };
 
