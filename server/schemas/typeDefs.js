@@ -63,22 +63,29 @@ const typeDefs = gql`
 
    addResponse(postId: ID!, responseText: String!): Post
 
-   updateUser(username: String, email: String,
-              password: String, location: String, 
-              age: Int, instrument: String, description: String, genres: String, 
-              influences: String, pastProjects: String, currentProjects: String, 
-              videoLink: String, audioLink:String): Auth
-
-   deleteUser(userId: ID!): Auth
-
-   updatePost(postText: String!): Post
-
    deletePost(postId: ID!): Post
 
-   deleteResponse(postId: ID!, responseId: ID!): Post        
+        
   }
 `;   
     
 // export typeDefs
 module.exports = typeDefs;
+
+
+
+
+// updateUser(username: String, email: String,
+//   password: String, location: String, 
+//   age: Int, instrument: String, description: String, genres: String, 
+//   influences: String, pastProjects: String, currentProjects: String, 
+//   videoLink: String, audioLink:String): Auth
+
+// deleteUser(userId: ID!): Auth
+
+// updatePost(postText: String!): Post
+
+// deletePost(postId: ID!): Post
+
+// deleteResponse(postId: ID!, responseId: ID!): Post   
 

@@ -71,6 +71,9 @@ const resolvers = {
       }
       throw new AuthenticationError('you need to be logged in');
     },
+
+
+
     addResponse: async (parent, { postId, responseText }, context) => {
       if (context.user) {
         const updatedPost = await Post.findOneAndUpdate(
@@ -103,9 +106,20 @@ const resolvers = {
 
     // },
 
-    // deletePost: async (parent, { postId }, context) => {
-
-    // },
+     deletePost: async (parent, { postId }, context) => {
+       if (context.user) {
+      try {
+      const deletedPost = await Post.findByIdAndDelete(postId);
+      return {
+          ...deletedPost._doc,
+          _id: deletedPost.id,
+          createdAt: new Date(deletedPost._doc.createdAt).toISOString(),
+        }
+      } catch (error) {
+         throw error
+      }
+     }
+    },
 
     // deleteResponse: async (parent, { postId }, context) => {
 
