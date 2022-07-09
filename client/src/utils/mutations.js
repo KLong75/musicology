@@ -67,3 +67,21 @@ export const ADD_RESPONSE = gql`
     }
   }
 `;
+
+export const DELETE_POST = gql`
+  mutation deletePost($postId: ID!) {
+    deletePost(postId: $postId) {
+      _id
+      postText
+      createdAt
+      username
+      responseCount
+      responses {
+        _id
+        responseText
+        createdAt
+        username
+      }
+    }
+  }
+`;
