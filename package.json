@@ -16,5 +16,9 @@
   },
   "devDependencies": {
     "concurrently": "^7.2.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0"
   }
 }
