@@ -36,6 +36,7 @@ const LogIn = () => {
     <Card id="card" className="postition-relative align-items-center justify-content-center col-10">
       <form className="m-1 p-1 align-items-center justify-content-center" noValidate autoComplete="off" onSubmit={handleFormSubmit}>
         <h2 id="text" className="row m-1 align-items-center justify-content-center">Login</h2>
+        <TextField required className="row m-1 justify-content-center align-items-center" id="login-username" label="Username" variant="filled" onChange={handleChange} />
         <TextField required className="row m-1 justify-content-center align-items-center" id="login-email" label="Email" variant="filled" onChange={handleChange} />
         <TextField required className="row m-1 justify-content-center align-items-center" id="login-pw" label="Password" variant="filled" onChange={handleChange} />
         {error ? (

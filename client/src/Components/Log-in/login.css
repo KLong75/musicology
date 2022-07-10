@@ -36,7 +36,7 @@ form h2 {
   color: #11222C;
 }
 
-:focus-within #login-email, :focus-within #login-pw {
+:focus-within #login-email, :focus-within #login-pw, :focus-within #login-username {
   color: #11222C;
 }
 
@@ -45,6 +45,3 @@ form h2 {
   color: #DADCE1;
 }
 
-#login-email label {
-  justify-content: center;
-}

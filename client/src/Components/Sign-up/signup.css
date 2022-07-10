@@ -36,9 +36,6 @@ form {
   color: #11222C;
 }
 
-:focus-within #first-name, :focus-within #last-name{
-  color: #11222C;
-}
 
 #btn {
   background-color: #1C5858;

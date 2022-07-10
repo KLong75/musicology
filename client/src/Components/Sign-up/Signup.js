@@ -38,10 +38,6 @@ const SignUp = () => {
    <Card id="card" className="justify-content-center align-items-center">
       <form className=" m-1 p-2 align-items-center justify-content-center space-between" noValidate autoComplete="off" onSubmit={handleFormSubmit}>
         <h2 id="signup" className="m-3 align-items-center justify-content-center">Sign Up</h2>
-        <div className=''>
-          <TextField required className="m-2 justify-content-center" id="first-name" label="First Name" variant="filled" onChange={handleChange} />
-          <TextField required className="m-2 justify-content-center" id="last-name" label="Last Name" variant="filled" onChange={handleChange} />
-        </div>
         <div>
           <TextField required className=" m-2 justify-content-center align-items-center" id="email" label="Email" variant="filled" onChange={handleChange} />
           <TextField required className=" m-2 justify-content-center align-items-center" id="username" label="Username" variant="filled" onChange={handleChange} />
