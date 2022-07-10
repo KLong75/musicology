@@ -9,16 +9,11 @@ const resolvers = {
         const userData = await User.findOne({ _id: context.user._id })
           .select('-__v -password')
           .populate('posts');
+
         return userData;  
+
       }
       throw new AuthenticationError('not logged in');
-    },
-    posts : async (parent, { username }) => {
-      const params = username ? { username } : {};
-      return Post.find(params).sort({ createdAt: -1 });
-    },
-    post: async (parent, { _id }) => {
-        return Thought.findOne({ _id });
     },
     users: async () => {
       return User.find()
@@ -30,12 +25,19 @@ const resolvers = {
         .select('-__v -password')
         .populate('posts');
     },
+    posts : async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Post.find(params).sort({ createdAt: -1 });
+    },
+    post: async (parent, { _id }) => {
+        return Post.findOne({ _id });
+    }
   },
+
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user)
-
 
       return { token, user };
 
@@ -61,7 +63,7 @@ const resolvers = {
 
         await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $push: { posts: post._id }},
+          { $push: { posts: post._id } },
           { new: true }
         );
 
@@ -69,18 +71,62 @@ const resolvers = {
       }
       throw new AuthenticationError('you need to be logged in');
     },
+    deletePost: async (parent, { postId }, context) => {
+      if (context.user) {
+        try {
+          const deletedPost = await Post.findByIdAndDelete(postId);
+        return {
+          ...deletedPost._doc,
+          _id: deletedPost.id,
+          createdAt: new Date(deletedPost._doc.createdAt).toISOString(),
+        }
+       } catch (error) {
+        throw error
+       }
+      }
+    },
     addResponse: async (parent, { postId, responseText }, context) => {
       if (context.user) {
         const updatedPost = await Post.findOneAndUpdate(
           { _id: postId },
-          { $push: { response: { responseText, username: context.user.username }}},
+          { $push: { responses: { responseText, username: context.user.username }}},
           { new: true, runValidators: true }
         );
         return updatedPost;
       }
       throw new AuthenticationError('you need to be logged in');
     },
+    
+
+
+    // updatePost: async (parent, { postId }, context) => {
+
+    // },
+
+    // deleteResponse: async (parent, { postId }, context) => {
+
+    // }
+
+    // updateUser: async (parent, { userId }, context) => {
+
+    // },
+
+    // deleteUser: async (parent, args, context) => {
+    //   if (context.user) {
+    //     const removedUser = await User.findOneAndDelete(
+    //       {_id: context.user._id },
+    //       { $pull: { users: { User } }},
+    //       { new: true }
+    //     );
+    //     return;
+    //     }
+    //     throw new AuthenticationError('You must be logged in to do that.')
+    // },
+
   }
 };
 
 module.exports = resolvers;
+
+
+

@@ -1,0 +1,50 @@
+[
+    { 
+        "username" : "Slash", 
+        "email" : "slash@gnr.com", 
+        "password" : "kGjRfUNWUIRwfS_", 
+        "age": "56",
+        "location": "",
+        "instrument": "guitar",
+        "profileImage": "",
+        "description":"blues rock guitarist",
+        "genres": "rock, punk, metal, blues",
+        "influences": "Led Zeppelin, Aerosmith, The Damned",
+        "currentProjects": "Guns N' Roses, Slash, Featuring Myles Kennedy and the Conspirators",
+        "pastProjects": "Velvet Revolver",
+        "videoLink": "https://www.youtube.com/channel/UCIak6JLVOjqhStxrL1Lcytw",
+        "audioLink": "https://soundcloud.com/guns-n-roses-official"
+    },
+    { 
+        "username" : "Axl", 
+        "email" : "axl@gnr.com", 
+        "password" : "kGjRfUNWUIRwfS_", 
+        "age": "60",
+        "location": "",
+        "instrument": "vocals",
+        "profileImage": "",
+        "description":"Reclusive lead singer",
+        "genres": "rock, punk, metal, blues",
+        "influences": "Led Zeppelin, Aerosmith, Queen",
+        "currentProjects": "Guns N' Roses",
+        "pastProjects": "Hollywood Rose",
+        "videoLink": "https://www.youtube.com/channel/UCIak6JLVOjqhStxrL1Lcytw",
+        "audioLink": "https://soundcloud.com/guns-n-roses-official"
+    },
+    { 
+        "username" : "Duff", 
+        "email" : "duff@gnr.com", 
+        "password" : "kGjRfUNWUIRwfS_", 
+        "age": "58",
+        "location": "",
+        "instrument": "bass, guitar, drums, vocals",
+        "profileImage": "",
+        "description":"Punk rocker multi-instrumentalist best known as a bass player",
+        "genres": "rock, punk, metal, blues",
+        "influences": "Johnny Thunders,Prince",
+        "currentProjects": "Guns N' Roses, Loaded",
+        "pastProjects": "Velvet Revolver, 10 Minute Warning, The Living",
+        "videoLink": "https://www.youtube.com/channel/UCIak6JLVOjqhStxrL1Lcytw",
+        "audioLink": "https://soundcloud.com/guns-n-roses-official"
+    }
+]
