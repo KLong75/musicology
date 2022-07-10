@@ -43,11 +43,31 @@ const SignUp = () => {
           <TextField required className="m-2 justify-content-center" id="last-name" label="Last Name" variant="filled" onChange={handleChange} />
         </div>
         <div>
+          <TextField required className=" m-2 justify-content-center align-items-center" id="email" label="Email" variant="filled" onChange={handleChange} />
+          <TextField required className=" m-2 justify-content-center align-items-center" id="username" label="Username" variant="filled" onChange={handleChange} />
+        </div>
+        <div>
           <TextField required className=" m-2 justify-content-center align-items-center" id="instruments" label="Instruments" variant="filled" onChange={handleChange} />
           <TextField required className=" m-2 justify-content-center align-items-center" id="age" label="Age" variant="filled" type="number" onChange={handleChange} />
         </div>
         <div>
-          <TextField required className=" m-2 justify-content-center align-items-center" id="email" label="Email" variant="filled" onChange={handleChange} />
+          <TextField required className=" m-2 justify-content-center align-items-center" id="location" label="Location" variant="filled" onChange={handleChange} />
+          <TextField required className=" m-2 justify-content-center align-items-center" id="desctiption" label="Description" variant="filled" onChange={handleChange} />
+        </div>
+        <div>
+          <TextField required className=" m-2 justify-content-center align-items-center" id="genre" label="Genre(s)" variant="filled" onChange={handleChange} />
+          <TextField required className=" m-2 justify-content-center align-items-center" id="" label="" variant="filled" onChange={handleChange} />
+        </div>
+        <div>
+          <TextField required className=" m-2 justify-content-center align-items-center" id="currentProjects" label="Current Projects" variant="filled" onChange={handleChange} />
+          <TextField required className=" m-2 justify-content-center align-items-center" id="pastProjects" label="Past Projects" variant="filled" onChange={handleChange} />
+        </div>
+        <div>
+          <TextField required className=" m-2 justify-content-center align-items-center" id="videoLink" label="Link to Videos" variant="filled" onChange={handleChange} />
+          <TextField required className=" m-2 justify-content-center align-items-center" id="audioLink" label="Link to Audio" variant="filled" onChange={handleChange} />
+        </div>
+        <div>
+          <TextField required className=" m-2 justify-content-center align-items-center" id="influences" label="Influences" variant="filled" onChange={handleChange} />
           <TextField required className=" m-2 justify-content-center align-items-center" id="password" label="Password" variant="filled" onChange={handleChange} />
         </div>
         <Button className="col-6 m-3 justify-content-center align-items-center" id="btn" variant="contained" type="submit">Sign Up</Button>
