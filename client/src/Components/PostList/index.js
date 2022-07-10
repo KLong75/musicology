@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './style.css'
 
 const PostList = ({ posts, title }) => {
   if (!posts.length) {
@@ -8,7 +9,7 @@ const PostList = ({ posts, title }) => {
 
   return (
     <div>Hey
-      <h3>title</h3>
+      <h3>{title}</h3>
       {posts &&
         posts.map(post => (
           <div key={post._id} className="card mb-3">
