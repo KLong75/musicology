@@ -14,9 +14,8 @@ export const LOGIN_USER = gql`
 
 export const ADD_USER = gql`
   mutation addUser
-    ($username: String!, $email: String!, $password: String!, $location: String, $age: Int, $instrument: String, $profileImage: String, $description: String, $genres: String, $influences: String, $pastProjects: String, $currentProjects: String, $videoLink: String, $audioLink: String) {
-
-    addUser(username: $username, email: $email, password: $password, age: $age, location: $location, instrument: $instrument, profileImage: $profileImage, description: $description, genres: $genres, influences: $influences, currentProjects: $currentProjects, pastProjects: $pastProjects, videoLink: $videoLink, audioLink: $audioLink) {
+    ($username: String!, $email: String!, $password: String!, $location: String, $age: Int, $instruments: String, $description: String, $genres: String, $influences: String, $pastProjects: String, $currentProjects: String, $videoLink: String, $audioLink: String) {  
+      addUser(username: $username, email: $email, password: $password, age: $age, location: $location, instruments: $instruments, description: $description, genres: $genres, influences: $influences, currentProjects: $currentProjects, pastProjects: $pastProjects, videoLink: $videoLink, audioLink: $audioLink) {
       token
       user {
         _id
@@ -24,8 +23,7 @@ export const ADD_USER = gql`
         email
         age
         location
-        instrument
-        profileImage
+        instruments
         description
         genres
         influences

@@ -44,8 +44,7 @@ export const QUERY_POST = gql`
         email
         age
         location
-        instrument
-        profileImage
+        instruments
         description
         genres
         influences
@@ -69,7 +68,7 @@ export const QUERY_POST = gql`
         _id
         username
         email
-        instrument
+        instruments
         genre
         location
       }
@@ -84,8 +83,7 @@ export const QUERY_POST = gql`
         email
         age
         location
-        instrument
-        profileImage
+        instruments
         description
         genres
         influences
@@ -115,7 +113,7 @@ export const QUERY_POST = gql`
         _id
         username
         email
-        instrument
+        instruments
         genres
         location
       }

@@ -26,8 +26,8 @@ const SinglePost = () => {
 
   return (
     <div>
-      <div className="">
-        <p className="">
+      <div className="card">
+        <p className="card-header">
           <span style={{ fontWeight: 700 }} className="">
             <Link 
               to={`/profile/${post.username}`}
@@ -37,7 +37,7 @@ const SinglePost = () => {
              {post.username}
             </Link>{' '}
           </span>{' '}
-          thought on {post.createdAt}
+          posted on {post.createdAt}
         </p>
         <div className="card-body">
           <p>{post.postText}</p>
