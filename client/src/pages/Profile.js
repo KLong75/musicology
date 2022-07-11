@@ -50,8 +50,20 @@ const Profile = (props) => {
     <div>
       <div className=''>
         <h2 className=''>
-           Viewing {userParam ? `${user.username}'s` : 'your'} profile. 
+           {userParam ? `${user.username}` : 'You'}
         </h2>
+        <p>{user.email}</p>
+        <p>{user.age}</p>
+        <p>{user.location}</p>
+        <p>{user.instruments}</p>
+        <p>{user.description}</p>
+        <p>{user.genres}</p>
+        <p>{user.influences}</p>
+        <p>{user.pastProjects}</p>
+        <p>{user.currentProjects}</p>
+        <a href={user.audioLink} target='_blank' rel="noreferrer"><p>Audio Sample: Check out my tunes!</p></a>
+        <a href={user.videoLink} target='_blank' rel="noreferrer">  <p>Video Sample: See me in action!</p></a>
+        
         {/* {userParam && (
           <button className='btn ml-auto' onClick={handleClick}>
             Add Friend
