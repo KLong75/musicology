@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, InputLabel, MenuItem, Select, Box, Button, Card, FormControl } from '@mui/material';
+import { TextField, InputLabel, MenuItem, Select, Button, Card, FormControl } from '@mui/material';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
