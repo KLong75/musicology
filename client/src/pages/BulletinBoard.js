@@ -30,7 +30,7 @@ const BulletinBoard = () => {
             ) : (
               <PostList 
                 posts={posts} 
-                title='Those about to rock...'
+                title='Bulletin Board'
               />
             )}
           </div>

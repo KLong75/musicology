@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, InputLabel, MenuItem, Select, Box, Button, Card, FormControl } from '@mui/material';
+import { TextField, InputLabel, MenuItem, Select,  Button, Card, FormControl } from '@mui/material';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
@@ -11,7 +11,7 @@ const SignUp = () => {
     email: '', 
     username: '',
     password: '',
-    age: 0,
+    age: 18,
     location: '',
     instruments: '',
     description: '',

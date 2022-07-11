@@ -7,6 +7,7 @@ import { setContext } from '@apollo/client/link/context';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+
 import BulletinBoard from './pages/BulletinBoard';
 import Login from './pages/Login';
 import NoExist from './pages/NoExist';
