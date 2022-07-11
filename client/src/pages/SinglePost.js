@@ -32,7 +32,7 @@ const SinglePost = () => {
             <Link 
               to={`/profile/${post.username}`}
               style={{ fontWeight: 700 }}
-              className='text-light'
+              className=''
             >
              {post.username}
             </Link>{' '}
