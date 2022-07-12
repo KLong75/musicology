@@ -1,15 +1,18 @@
-import React from 'react'
-import './Components/Header/NavStyle.css';
+import React, {useState} from 'react'
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
+
 function Navbar() {
+  const [sidebar, setSidebar] = useState(false)
+
+  const showSidebar = () => setSidebar(!sidebar)
   return (
     <>
       <div className='navbar'>
         <link to='#' className='menu-bars'>
-          <FaIcons.FaBars/>
+          <FaIcons.FaBars onClick={showSidebar}/>
         </link>
       </div>
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
