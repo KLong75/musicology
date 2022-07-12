@@ -1,6 +1,5 @@
 const { gql } = require('apollo-server-express');
 
-
 const typeDefs = gql`
   type User {
     _id: ID
@@ -64,7 +63,6 @@ const typeDefs = gql`
    addResponse(postId: ID!, responseText: String!): Post
 
    deletePost(postId: ID!): Post
-
         
   }
 `;   
@@ -75,17 +73,21 @@ module.exports = typeDefs;
 
 
 
-// updateUser(username: String, email: String,
-//   password: String, location: String, 
-//   age: Int, instrument: String, description: String, genres: String, 
-//   influences: String, pastProjects: String, currentProjects: String, 
-//   videoLink: String, audioLink:String): Auth
 
-// deleteUser(userId: ID!): Auth
 
-// updatePost(postText: String!): Post
+// do not delete below this line please
 
-// deletePost(postId: ID!): Post
+//  updateUser(username: String, email: String,
+//  password: String, location: String, 
+//  age: Int, instrument: String, description: String, genres: String, 
+//  influences: String, pastProjects: String, currentProjects: String, 
+//  videoLink: String, audioLink:String): Auth
 
-// deleteResponse(postId: ID!, responseId: ID!): Post   
+//  deleteUser(userId: ID!): Auth
+
+//  updatePost(postText: String!): Post
+
+//  deletePost(postId: ID!): Post
+
+//  deleteResponse(postId: ID!, responseId: ID!): Post   
 

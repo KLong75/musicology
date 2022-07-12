@@ -22,7 +22,7 @@ export const QUERY_POST = gql`
   query post($id: ID!) {
     post(_id: $id) {
       _id
-      thoughtText
+      postText
       createdAt
       username
       responseCount
@@ -53,7 +53,6 @@ export const QUERY_POST = gql`
         pastProjects
         videoLink
         audioLink
-        }
         posts {
           _id
           postText
@@ -117,7 +116,7 @@ export const QUERY_POST = gql`
         username
         email
         instrument
-        genre
+        genres
         location
       }
     }

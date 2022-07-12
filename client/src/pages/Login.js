@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { TextField, Button, Card } from '@mui/material';
-import './login.css';
 import { useMutation } from '@apollo/client';
 //import { Link } from 'react-router-dom';
-import { LOGIN_USER } from '../../utils/mutations';
-import Auth from '../../utils/auth';
+import { LOGIN_USER } from '../utils/mutations';
+import Auth from '../utils/auth';
 
 
 const LogIn = () => {

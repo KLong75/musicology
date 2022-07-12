@@ -96,6 +96,7 @@ const resolvers = {
       }
       throw new AuthenticationError('you need to be logged in');
     },
+    
 
 
     // updatePost: async (parent, { postId }, context) => {

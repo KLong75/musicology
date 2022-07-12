@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { TextField, Button, Card } from '@mui/material';
-import './signup.css';
 //import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
-import Auth from '../../utils/auth';
-import { ADD_USER } from '../../utils/mutations';
+import Auth from '../utils/auth';
+import { ADD_USER } from '../utils/mutations';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SignUp = () => {
