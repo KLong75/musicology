@@ -3,6 +3,7 @@ import Auth from '../utils/auth'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+import Header from '../components/Header';
 import ResponseForm from '../components/ResponseForm';
 import ResponseList from '../components/ResponseList';
 
@@ -25,6 +26,9 @@ const SinglePost = () => {
 
 
   return (
+    <>
+    <Header />
+    <main>
     <div>
       <div className="card">
         <p className="card-header">
@@ -43,12 +47,14 @@ const SinglePost = () => {
           <p>{post.postText}</p>
         </div>
       </div>
-
+      
       {post.responseCount > 0 && (
         <ResponseList responses={post.responses} />
       )}
       {Auth.loggedIn() && <ResponseForm postId={post._id} />}
-    </div>
+      </div>
+    </main>
+    </>
   );
 };
 

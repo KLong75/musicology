@@ -2,8 +2,8 @@ import React from 'react';
 import Auth from '../utils/auth';
 import { Navigate, useParams } from 'react-router-dom';
 
+import Header from '../components/Header';
 import PostList from '../components/PostList';
-
 import PostForm from '../components/PostForm';
 
 import { useQuery } from '@apollo/client';
@@ -47,6 +47,9 @@ const Profile = (props) => {
   // };
 
   return (
+    <>
+    <Header />
+    <main>
     <div>
       <div className=''>
         <h2 className=''>
@@ -88,6 +91,8 @@ const Profile = (props) => {
       </div>
       <div className=''>{!userParam && <PostForm />}</div>
     </div>
+    </main>
+    </>
   );
 };
 

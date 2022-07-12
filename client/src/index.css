@@ -12,6 +12,8 @@ code {
     monospace;
 } */
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +37,39 @@ code {
 #trumpet {
   height: 20vmin;
   pointer-events: none;
+  margin-left: 10rem;
+  
+}
+
+#bass{
+  margin-left: 6rem;
+}
+
+#drums{
+ margin-right: 5rem;
+ 
+}
+
+#piano{
+  margin-left:5rem;
+  
+  
+}
+
+#guitar{
+  margin-left: 6rem;
+  
+}
+
+#trombone{
+  margin-right: 5rem;
+
+}
+
+#title-div {
+  text-align: center;
+}
+
+#app-title {
+  font-size: 6rem;
 }

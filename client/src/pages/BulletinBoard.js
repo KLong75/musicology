@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Header from '../components/Header';
 import PostForm from '../components/PostForm';
 import PostList from '../components/PostList';
 
@@ -17,6 +18,8 @@ const BulletinBoard = () => {
     const loggedIn = Auth.loggedIn();
 
   return (
+    <>
+    <Header />
     <main>
       <div className=''>
         {loggedIn && (
@@ -41,6 +44,7 @@ const BulletinBoard = () => {
         ) : null}
       </div>
     </main>
+    </>
   );
 };
 
