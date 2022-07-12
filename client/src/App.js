@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Footer from './components/Footer';
-
 import LandingPage from './pages/LandingPage';
 import BulletinBoard from './pages/BulletinBoard';
 import Login from './pages/Login';
@@ -38,8 +36,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className='flex-column justify-flex-start min-100-vh'>
-          
+        
           <div className='container'>
             <Routes>
               <Route
@@ -72,8 +69,6 @@ function App() {
               />
             </Routes>
           </div>
-          <Footer />
-        </div>
       </Router>
     </ApolloProvider>
   );

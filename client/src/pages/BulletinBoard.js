@@ -18,7 +18,9 @@ const BulletinBoard = () => {
     const loggedIn = Auth.loggedIn();
 
   return (
+    
     <>
+    
     <Header />
     <main>
       <div className=''>
@@ -37,14 +39,17 @@ const BulletinBoard = () => {
               />
             )}
           </div>
-        {loggedIn && userData ? (
+          {loggedIn && userData ? (
           <div className=''>
             {/* This div will only appear when a user is logged in */}
+            "It's a long way to the top if you wanna rock and roll."
           </div>
-        ) : null}
+          ) : null}
       </div>
     </main>
+    
     </>
+   
   );
 };
 

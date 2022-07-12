@@ -13,7 +13,7 @@ code {
 } */
 
 
-
+/* Landing Page */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -30,40 +30,35 @@ code {
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
 #trumpet {
-  height: 20vmin;
+  height: 15vmin;
   pointer-events: none;
-  margin-left: 10rem;
-  
+  animation-direction: reverse;
 }
 
 #bass{
-  margin-left: 6rem;
+  
 }
 
 #drums{
- margin-right: 5rem;
- 
+  animation-direction: reverse;
+  height: 36vmin;
 }
 
-#piano{
-  margin-left:5rem;
-  
-  
+#keyboard{
+  height: 30vmin; 
 }
 
 #guitar{
-  margin-left: 6rem;
   
 }
 
 #trombone{
-  margin-right: 5rem;
-
+  animation-direction: reverse;
 }
 
 #title-div {
@@ -71,5 +66,5 @@ code {
 }
 
 #app-title {
-  font-size: 6rem;
+  font-size: 4rem;
 }

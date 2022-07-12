@@ -25,7 +25,7 @@ const Profile = (props) => {
   }
 
   if (loading) {
-    return <div>Loading...</div>
+    return <div>Get ready to rock...</div>
   }
 
   if (!user?.username) {
