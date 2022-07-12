@@ -201,16 +201,14 @@ const SignUp = () => {
         </div>
         <div>
           <TextField className=" m-2 justify-content-center align-items-center" id="pastProjects" placeholder='drummer in country band' value={formState.pastProjects} label="Past Projects" name='pastProjects' variant="filled" onChange={handleChange} />
-
           <TextField className=" m-2 justify-content-center align-items-center" id="audioLink" placeholder='SoundCloud, Bandcamp' value={formState.audioLink} label="Link to Audio" name='audioLink' variant="filled" onChange={handleChange} />
         </div>
         <div>
           <TextField className=" m-2 justify-content-center align-items-center" id="videoLink" placeholder='YouTube, Instagram, etc' value={formState.videoLink} label="Link to Videos" name='videoLink' variant="filled" onChange={handleChange} />
-          
         </div>
         <Button className="col-6 m-3 justify-content-center align-items-center" id="btn" variant="contained" type="submit">Sign Up</Button>
       </form>
-      {error && <div>Sign up failed. Bogus.</div>}
+      {error && <div>Bogus dude. Sign up failed. Give it another shot!</div>}
     </Card>
   );
 };
