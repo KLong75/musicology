@@ -31,25 +31,26 @@ const ResponseForm = ({ postId }) => {
 
   return (
     <div>
-      <p 
-        className={`m-0 ${characterCount === 300 || error ? 'text-error' : ''}`}
-      >
-        Character Count: {characterCount}/300
-        {error && <span className='ml-2'>Something went wrong...</span>}
-      </p>
+      <h4>Do want to jam?</h4>
       <form 
-        className='flex-row justify-center justify-space-between-md align-stretch' 
+        className='' 
         onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder='Leave a reaction to this thought...'
+          placeholder='Respond to this post...'
           value={responseText}
-          className='form-input col-12 col-md-9'
+          className='form-input'
           onChange={handleChange}
         ></textarea>
-        <button className='btn col-12 col-md-3' type='submit'>
+        <button className='btn' type='submit'>
           Submit
         </button>
+        <p 
+        className={`${characterCount === 300 || error ? 'text-error' : ''}`}
+      >
+        Character Count: {characterCount}/300
+        {error && <span className=''>Something went wrong with your response...</span>}
+      </p>
       </form>
       
       {error && <div>Something went wrong...</div>}

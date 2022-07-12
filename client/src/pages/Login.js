@@ -6,7 +6,7 @@ import { LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 
-const LogIn = () => {
+const Login = () => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN_USER);
 
@@ -35,12 +35,13 @@ const LogIn = () => {
     <Card id="card" className="postition-relative align-items-center justify-content-center col-10">
       <form className="m-1 p-1 align-items-center justify-content-center" noValidate autoComplete="off" onSubmit={handleFormSubmit}>
         <h2 id="text" className="row m-1 align-items-center justify-content-center">Login</h2>
-        <TextField required className="row m-1 justify-content-center align-items-center" id="login-username" label="Username" variant="filled" onChange={handleChange} />
-        <TextField required className="row m-1 justify-content-center align-items-center" id="login-email" label="Email" variant="filled" onChange={handleChange} />
-        <TextField required className="row m-1 justify-content-center align-items-center" id="login-pw" label="Password" variant="filled" onChange={handleChange} />
+        
+        <TextField required className="row m-1 justify-content-center align-items-center" id="login-email" placeholder='email@address.com' label="Email" name='email' type='email' variant="filled" value={formState.email} onChange={handleChange} />
+
+        <TextField required className="row m-1 justify-content-center align-items-center" id="login-pw" type='password' placeholder='******' value={formState.password} label="Password"  name='password' variant="filled" onChange={handleChange} />
         {error ? (
           <div>
-            <p className="error-text">The provided credentials are incorrect</p>
+            <p className="error-text">Dude, the login info you entered was bogus. Please try again.</p>
           </div>
         ) : null}
         <div className="flex-row flex-end"></div>
@@ -50,4 +51,4 @@ const LogIn = () => {
   );
 };
 
-export default LogIn;
+export default Login;

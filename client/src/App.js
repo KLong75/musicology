@@ -4,9 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-
+import LandingPage from './pages/LandingPage';
 import BulletinBoard from './pages/BulletinBoard';
 import Login from './pages/Login';
 import NoExist from './pages/NoExist';
@@ -38,13 +36,12 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className='flex-column justify-flex-start min-100-vh'>
-          <Header />
+        
           <div className='container'>
             <Routes>
               <Route
                 path='/'
-                element={<BulletinBoard />}
+                element={<LandingPage />}
               />
               <Route
                 path='/login'
@@ -53,6 +50,10 @@ function App() {
               <Route
                 path='/signup'
                 element={<Signup />}
+              />
+              <Route
+                path='/bulletin_board'
+                element={<BulletinBoard />}
               />
               <Route path='/profile'>
                 <Route path=':username' element={<Profile />} />
@@ -68,25 +69,9 @@ function App() {
               />
             </Routes>
           </div>
-          <Footer />
-        </div>
       </Router>
     </ApolloProvider>
   );
 }
 
 export default App;
-
-
-
-
-
-// eslint-disable-next-line no-lone-blocks
-{/* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Musicology
-        </h1>
-      </header>
-    </div> */}

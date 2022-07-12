@@ -74,3 +74,59 @@ form h2 {
 #signup {
   color: #11222C;
 }
+
+/* Landing Page */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+#trumpet {
+  height: 14vmin;
+  pointer-events: none;
+  animation-direction: reverse;
+}
+
+#bass{
+  height: 36vmin;
+}
+
+#drums{
+  animation-direction: reverse;
+  height: 36vmin;
+}
+
+#keyboard{
+  height: 30vmin; 
+}
+
+#guitar{
+  height: 30vmin;
+}
+
+#trombone{
+  animation-direction: reverse;
+}
+
+#title-div {
+  text-align: center;
+}
+
+#app-title {
+  font-size: 4rem;
+}

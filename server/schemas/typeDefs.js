@@ -8,8 +8,7 @@ const typeDefs = gql`
     password: String
     age: Int
     location: String
-    instrument: String
-    profileImage: String
+    instruments: String
     description: String
     genres: String 
     influences: String
@@ -54,7 +53,7 @@ const typeDefs = gql`
    
    addUser(username: String!, email: String!, password:
            String!, location: String, 
-           age: Int, instrument: String, description: String, genres: String, 
+           age: Int, instruments: String, description: String, genres: String, 
            influences: String, pastProjects: String currentProjects: String, 
            videoLink: String, audioLink: String): Auth
 

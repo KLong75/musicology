@@ -3,8 +3,9 @@ import Auth from '../utils/auth'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import ResponseForm from '../components/ResponseForm';
-import ResponseList from '../components/ResponseList';
+import Header from '../Components/Header';
+import ResponseForm from '../Components/ResponseForm';
+import ResponseList from '../Components/ResponseList';
 
 import { useQuery } from '@apollo/client';
 import { QUERY_POST } from '../utils/queries';
@@ -25,30 +26,35 @@ const SinglePost = () => {
 
 
   return (
+    <>
+    <Header />
+    <main>
     <div>
-      <div className="">
-        <p className="">
+      <div className="card">
+        <p className="card-header">
           <span style={{ fontWeight: 700 }} className="">
             <Link 
               to={`/profile/${post.username}`}
               style={{ fontWeight: 700 }}
-              className='text-light'
+              className=''
             >
              {post.username}
             </Link>{' '}
           </span>{' '}
-          thought on {post.createdAt}
+          posted on {post.createdAt}
         </p>
         <div className="card-body">
           <p>{post.postText}</p>
         </div>
       </div>
-
+      
       {post.responseCount > 0 && (
         <ResponseList responses={post.responses} />
       )}
       {Auth.loggedIn() && <ResponseForm postId={post._id} />}
-    </div>
+      </div>
+    </main>
+    </>
   );
 };
 

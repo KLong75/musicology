@@ -26,11 +26,8 @@ const userSchema = new Schema(
     location: {
       type: String,
     },
-    instrument: {
+    instruments: {
         type: String,
-    },
-    profileImage: {
-      type: String,
     },
     description: {
       type: String,
