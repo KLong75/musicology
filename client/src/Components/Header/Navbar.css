@@ -1,0 +1,20 @@
+:root {
+    --bg: #F69000;
+    --bg-accent: #F6C624;
+    --secondary: #53B1B1;
+    --secondary-accent: #1C5858;
+    --text-color: #11222C;
+    --text-second: #DADCE1;
+    --nav-size: 60px;
+    --border: 1px solid #474A4D;
+    --border-radius: 8px;
+    --speed: 500ms;
+}
+
+.navbar {
+    background-color: var(--bg);
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
