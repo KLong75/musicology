@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PostList = ({ posts, title }) => {
   if (!posts.length) {
-    return <h3>No one has postd on the bulletin board yet...</h3>;
+    return <h3>Dude! You haven't posted anything on the bulletin board yet...</h3>;
   }
 
   return (

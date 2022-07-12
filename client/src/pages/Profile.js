@@ -69,7 +69,8 @@ const Profile = (props) => {
         <div className="col-12 mb-3 col-lg-8">
           <PostList 
             posts={user.posts} 
-            title={`${user.username}'s posts...`} 
+            // title={`${user.username}'s posts...`} 
+            title={userParam ? `${user.username}` : 'Your Posts'}
           />
         </div>
         {/* <div className=''>
