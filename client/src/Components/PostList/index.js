@@ -8,7 +8,7 @@ const PostList = ({ posts, title }) => {
   }
 
   return (
-    <div>Hey
+    <div>
       <h3>{title}</h3>
       {posts &&
         posts.map(post => (
