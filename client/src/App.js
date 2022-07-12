@@ -75,17 +75,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-// eslint-disable-next-line no-lone-blocks
-{/* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Musicology
-        </h1>
-      </header>
-    </div> */}

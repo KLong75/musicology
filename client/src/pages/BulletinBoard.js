@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from '../components/Header';
-import PostForm from '../components/PostForm';
-import PostList from '../components/PostList';
+import Header from '../Components/Header';
+import PostForm from '../Components/PostForm';
+import PostList from '../Components/PostList';
 
 import Auth from '../utils/auth';
 

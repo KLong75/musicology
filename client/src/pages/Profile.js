@@ -2,9 +2,9 @@ import React from 'react';
 import Auth from '../utils/auth';
 import { Navigate, useParams } from 'react-router-dom';
 
-import Header from '../components/Header';
-import PostList from '../components/PostList';
-import PostForm from '../components/PostForm';
+import Header from '../Components/Header';
+import PostList from '../Components/PostList';
+import PostForm from '../Components/PostForm';
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
@@ -16,6 +16,15 @@ const Profile = (props) => {
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
     variables: { username: userParam}
   });
+
+  function formatUrl(url){
+    var httpString = 'http://'
+        , httpsString = 'https://'
+        ;
+    if (url.substr(0, httpString.length) !== httpString && url.substr(0, httpsString.length) !== httpsString)
+        url = httpString + url;
+    return url;
+  }
 
   const user = data?.me || data?.user || {};
 
@@ -55,8 +64,8 @@ const Profile = (props) => {
         <p>{user.influences}</p>
         <p>{user.pastProjects}</p>
         <p>{user.currentProjects}</p>
-        <a href={user.audioLink} target='_blank' rel="noreferrer"><p>Audio Sample: Check out my tunes!</p></a>
-        <a href={user.videoLink} target='_blank' rel="noreferrer">  <p>Video Sample: See me in action!</p></a>
+        <a href={formatUrl(user.audioLink)} target='_blank' rel="noreferrer"><p>Audio Sample: Check out my tunes!</p></a>
+        <a href={formatUrl(user.videoLink)} target='_blank' rel="noreferrer"><p>Video Sample: See me in action!</p></a>
         
         {/* {userParam && (
           <button className='btn ml-auto' onClick={handleClick}>

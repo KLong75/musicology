@@ -27,7 +27,7 @@ const PostList = ({ posts, title }) => {
                 <p>{post.postText}</p>
                 <p className="mb-0">
                   Responses: {post.responseCount} || Click to{' '}
-                  {post.responseCount ? 'see' : 'start'} the discussion!
+                  {post.responseCount ? 'see' : 'start'} the conversation!
                 </p>
               </Link>
             </div>

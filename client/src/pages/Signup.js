@@ -33,17 +33,6 @@ const SignUp = () => {
     });
   };
 
-  // const handleFormSubmit = async (event) => {
-  //   event.preventDefault();
-
-  //   const mutationResponse = await addUser({
-  //     variables: { ...formState
-
-  //     },
-  //   });
-  //   const token = mutationResponse.data.addUser.token;
-  //   Auth.login(token);
-  // };
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -64,7 +53,7 @@ const SignUp = () => {
       email: '', 
       username: '',
       password: '',
-      age: 0,
+      age: 18,
       location: '',
       instruments: '',
       description: '',

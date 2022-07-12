@@ -3,9 +3,9 @@ import Auth from '../utils/auth'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import Header from '../components/Header';
-import ResponseForm from '../components/ResponseForm';
-import ResponseList from '../components/ResponseList';
+import Header from '../Components/Header';
+import ResponseForm from '../Components/ResponseForm';
+import ResponseList from '../Components/ResponseList';
 
 import { useQuery } from '@apollo/client';
 import { QUERY_POST } from '../utils/queries';
