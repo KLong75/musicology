@@ -15,7 +15,6 @@ const FileUploader = () => {
     e.preventDefault();
     const formData = await new FormData();
     formData.append("file", file);
-    console.log(formData);
 
     try {
       const res = await axios.post("/upload", formData, {
@@ -26,6 +25,7 @@ const FileUploader = () => {
 
       const { fileName, filePath } = res.data;
       setUploadedFile({ fileName, filePath });
+      // console.log(res.data);
     } catch (err) {
       if (err.response.status === 500) {
         console.log("problem with server");
@@ -34,6 +34,7 @@ const FileUploader = () => {
       }
     }
   };
+  console.log(uploadedFile);
   return (
     <Fragment>
       <form onSubmit={onSubmit}>
@@ -54,6 +55,12 @@ const FileUploader = () => {
           className="btn btn-primary btn-block"
         />
       </form>
+      {uploadedFile ? (
+        <div>
+          <h3>{uploadedFile.filePath}</h3>
+          <img src={uploadedFile.filePath} alt="file" />
+        </div>
+      ) : null}
     </Fragment>
   );
 };
