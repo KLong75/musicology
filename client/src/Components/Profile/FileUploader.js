@@ -1,10 +1,18 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import axios from "axios";
 
 const FileUploader = () => {
   const [file, setFile] = useState("");
   const [filename, setFilename] = useState("Choose File");
   const [uploadedFile, setUploadedFile] = useState({});
+  useEffect(() => {
+    let profilePic = localStorage.getItem("profilePic");
+    if (!profilePic) {
+      window.localStorage.setItem("profilePic", "");
+    } else {
+      setUploadedFile(JSON.parse(profilePic));
+    }
+  }, []);
 
   const onChange = (e) => {
     setFile(e.target.files[0]);
@@ -25,6 +33,10 @@ const FileUploader = () => {
 
       const { fileName, filePath } = res.data;
       setUploadedFile({ fileName, filePath });
+      localStorage.setItem(
+        "profilePic",
+        JSON.stringify({ fileName, filePath })
+      );
       // console.log(res.data);
     } catch (err) {
       if (err.response.status === 500) {
@@ -34,6 +46,7 @@ const FileUploader = () => {
       }
     }
   };
+
   console.log(uploadedFile);
   return (
     <Fragment>
