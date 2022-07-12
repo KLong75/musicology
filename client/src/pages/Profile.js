@@ -34,6 +34,9 @@ const Profile = () => {
                   <div className="col-md-9 text-secondary">
                     Project Description
                   </div>
+                  <div>
+                    Project file
+                  </div>
                 </div>
               </div>
             </div>
