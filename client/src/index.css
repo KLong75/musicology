@@ -35,13 +35,13 @@ code {
 }
 
 #trumpet {
-  height: 15vmin;
+  height: 14vmin;
   pointer-events: none;
   animation-direction: reverse;
 }
 
 #bass{
-  
+  height: 36vmin;
 }
 
 #drums{
@@ -54,7 +54,7 @@ code {
 }
 
 #guitar{
-  
+  height: 30vmin;
 }
 
 #trombone{

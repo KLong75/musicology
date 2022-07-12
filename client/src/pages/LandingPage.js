@@ -13,7 +13,7 @@ import Stack from '@mui/material/Stack';
 
 const LandingPage = () => {
   return (
-    <main id='landing-page-main'>
+    <>
       <Stack direction='row' id='' spacing={6} justifyContent='space-evenly' alignItems='center' >
         <img src={trumpet} className="App-logo" id='trumpet' alt='trumpet' /> 
         <img src={guitar} className="App-logo"  id='guitar' alt="guitar"/> 
@@ -35,7 +35,7 @@ const LandingPage = () => {
         <img src={drums2} className="App-logo" id='drums' alt='drumset' /> 
         <img src={bass} className="App-logo"  id='bass' alt='bass guitar'/> 
       </Stack>
-    </main>
+    </>
   );
 };
 
