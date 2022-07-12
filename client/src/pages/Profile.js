@@ -2,8 +2,8 @@ import React from 'react';
 import Auth from '../utils/auth';
 import { Navigate, useParams } from 'react-router-dom';
 
+import Header from '../components/Header';
 import PostList from '../components/PostList';
-
 import PostForm from '../components/PostForm';
 
 import { useQuery } from '@apollo/client';
@@ -21,11 +21,11 @@ const Profile = (props) => {
 
   // navigate to personal profile page if username is the logged-in user's
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Navigate to ='/profile:username' />;
+    return <Navigate to ='/profile' />;
   }
 
   if (loading) {
-    return <div>Loading...</div>
+    return <div>Get ready to rock...</div>
   }
 
   if (!user?.username) {
@@ -36,21 +36,15 @@ const Profile = (props) => {
     );
   }
 
-  // const handleClick = async () => {
-  //   try {
-  //     await addFriend({
-  //       variables: { id: user._id }
-  //     });
-  //   } catch (e) {
-  //     console.error(e);
-  //   }
-  // };
 
   return (
+    <>
+    <Header />
+    <main>
     <div>
       <div className=''>
         <h2 className=''>
-           {userParam ? `${user.username}` : 'You'}
+           {userParam ? `${user.username}` : 'You Rock!'}
         </h2>
         <p>{user.email}</p>
         <p>{user.age}</p>
@@ -88,6 +82,8 @@ const Profile = (props) => {
       </div>
       <div className=''>{!userParam && <PostForm />}</div>
     </div>
+    </main>
+    </>
   );
 };
 
