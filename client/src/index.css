@@ -12,7 +12,7 @@ code {
     monospace;
 } */
 
-:root {
+html, #root {
   --bg: #F69000;
   --bg-accent: #F6C624;
   --secondary: #53B1B1;
@@ -23,21 +23,21 @@ code {
   --border: 1px solid #474A4D;
   --border-radius: 8px;
   --speed: 500ms;
-  position: relative;
-  display: flex;
-  
-}
+}  
 
-html {
+html, #root {
   background-color: #11222C;
-  position: relative;
-  display: flex;
-}
+  min-height: 100%;
+} 
 
 main, header, footer {
   background-color: #11222C;
   position: relative;
   display: flex;
+} 
+
+.container {
+  max-width: 100%;
 }
 
 /* Bulletin Board */
@@ -46,17 +46,23 @@ main, header, footer {
 }
 
 /* Forms */
-#card {
+form {
   background-color: var(--secondary);
-  display: flex;
   justify-content: center;
   align-content: center;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.form-input {
+  justify-content: center;
 }
 
-form {
+/* form {
   position: relative;
-}
+  background-color: #53B1B1;
+} */
 
 form h2 {
   color: #11222C;
@@ -69,10 +75,25 @@ form h2 {
 #btn {
   background-color: #1C5858;
   color: #DADCE1;
+  justify-content: center;
+}
+
+.form-input {
+  justify-content: center;
 }
 
 #signup {
   color: #11222C;
+  align-items: center;
+  text-align: center;
+  position: relative;
+} 
+
+#login {
+  color: #11222C;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 /* Landing Page */
