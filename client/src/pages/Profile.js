@@ -8,6 +8,7 @@ import PostForm from '../Components/PostForm';
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
+import "./style.css";
 
 
 const Profile = (props) => {
@@ -56,7 +57,7 @@ const Profile = (props) => {
               <div className="col-md-4 mt-1">
                 <div className="card text-center sidebar">
                   <div className="card-body">
-                    <img src="" className="rounded-circle" width="150"></img>
+                    <img src="https://cdn-images.audioaddict.com/1/5/d/b/a/a/15dbaa1f6a26c234d4977f10e9ea8808.png" className="rounded-circle" width="150"></img>
                     <div className="mt-3">
                       <h3>{userParam ? `${user.username}` : 'You Rock!'}</h3>
                       <h4>Email:</h4>
@@ -86,36 +87,29 @@ const Profile = (props) => {
                   <div className="card-body">
                     <div className="row">
                       <div className="col-md-3">
-                        <h5>Current Projects:</h5>
+                        <h5>Current:</h5>
                         <p>{user.currentProjects}</p>
                       </div>
                       <div className="col-md-3">
-                        <h5>Past Projects:</h5>
+                        <h5>Past:</h5>
                         <p>{user.pastProjects}</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <div className="flex-row justify-space-between mb-3">
-                  <div className="col-12 mb-3 col-lg-8">
-                    <PostList
-                      posts={user.posts}
-                      // title={`${user.username}'s posts...`} 
-                      title={userParam ? `${user.username}` : 'Your Posts'}
-                    />
-                  </div>
-                    {/* <div className=''>
-                      <FriendList
-                      username={user.username}
-                      friendCount={user.friendCount}
-                      friends={user.friends}
-                      />
-                      </div> */}
+                <div className="card mb-3 content">
+                <div className="col-12 mb-3 col-lg-8">
+                  <PostList
+                    posts={user.posts}
+                    // title={`${user.username}'s posts...`} 
+                    title={userParam ? `${user.username}` : 'Your Posts'}
+                  />
                 </div>
-                <div className=''>{!userParam && <PostForm />}</div>
               </div>
+              <div className=''>{!userParam && <PostForm />}</div>
+              </div>
+              
+
             </div>
           </div>
         </div>
