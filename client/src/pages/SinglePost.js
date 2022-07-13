@@ -24,7 +24,6 @@ const SinglePost = () => {
     return <div> Loading...</div>
   }
 
-
   return (
     <>
     <Header />
