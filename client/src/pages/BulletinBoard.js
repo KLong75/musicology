@@ -1,7 +1,8 @@
 import React from 'react';
 
-import PostForm from '../components/PostForm';
-import PostList from '../components/PostList';
+import Header from '../Components/Header';
+import PostForm from '../Components/PostForm';
+import PostList from '../Components/PostList';
 
 import Auth from '../utils/auth';
 
@@ -17,6 +18,10 @@ const BulletinBoard = () => {
     const loggedIn = Auth.loggedIn();
 
   return (
+    
+    <>
+    
+    <Header />
     <main>
       <div className=''>
         {loggedIn && (
@@ -30,17 +35,21 @@ const BulletinBoard = () => {
             ) : (
               <PostList 
                 posts={posts} 
-                title='Those about to rock...'
+                title='Bulletin Board'
               />
             )}
           </div>
-        {loggedIn && userData ? (
+          {loggedIn && userData ? (
           <div className=''>
             {/* This div will only appear when a user is logged in */}
+            "It's a long way to the top if you wanna rock and roll."
           </div>
-        ) : null}
+          ) : null}
       </div>
     </main>
+    
+    </>
+   
   );
 };
 

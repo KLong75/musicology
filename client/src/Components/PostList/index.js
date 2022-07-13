@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PostList = ({ posts, title }) => {
   if (!posts.length) {
-    return <h3>Are You ready to rock?</h3>;
+    return <h3>Dude! You haven't posted anything on the bulletin board yet...</h3>;
   }
 
   return (
@@ -27,7 +27,7 @@ const PostList = ({ posts, title }) => {
                 <p>{post.postText}</p>
                 <p className="mb-0">
                   Responses: {post.responseCount} || Click to{' '}
-                  {post.responseCount ? 'see' : 'start'} the discussion!
+                  {post.responseCount ? 'see' : 'start'} the conversation!
                 </p>
               </Link>
             </div>

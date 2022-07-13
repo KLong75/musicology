@@ -31,18 +31,13 @@ const ResponseForm = ({ postId }) => {
 
   return (
     <div>
-      <p 
-        className={`${characterCount === 300 || error ? 'text-error' : ''}`}
-      >
-        Character Count: {characterCount}/300
-        {error && <span className=''>Something went wrong with your response...</span>}
-      </p>
+      <h4>Do want to jam?</h4>
       <form 
         className='' 
         onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder='Do you want to jam?'
+          placeholder='Respond to this post...'
           value={responseText}
           className='form-input'
           onChange={handleChange}
@@ -50,6 +45,12 @@ const ResponseForm = ({ postId }) => {
         <button className='btn' type='submit'>
           Submit
         </button>
+        <p 
+        className={`${characterCount === 300 || error ? 'text-error' : ''}`}
+      >
+        Character Count: {characterCount}/300
+        {error && <span className=''>Something went wrong with your response...</span>}
+      </p>
       </form>
       
       {error && <div>Something went wrong...</div>}

@@ -57,10 +57,7 @@ const PostForm = () => {
 
   return (
     <div>
-      <p className={`${characterCount === 500 || error ? 'text-error' : ''}`}>
-        Character Count: {characterCount}/500
-        {error && <span className=''>Something went wrong...</span>}
-      </p>
+      <h4>Make a Post on the Bulletin Board</h4>
       <form className=''
       onSubmit={handleFormSubmit}
       >
@@ -73,6 +70,13 @@ const PostForm = () => {
         <button className='btn' type='submit'>
           Submit
         </button>
+
+        <p className={`${characterCount === 500 || error ? 'text-error' : ''}`}>
+        Character Count: {characterCount}/500
+        {error && <span className=''>Something went wrong...</span>}
+      </p>
+
+        
       </form>
     </div>
   );
