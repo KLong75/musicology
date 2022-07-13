@@ -24,7 +24,7 @@ const PostForm = () => {
       const { posts } = cache.readQuery({ query: QUERY_POSTS });
       cache.writeQuery({
         query: QUERY_POSTS,
-        data : { thoughts: [addPost, ...posts] }
+        data : { posts: [addPost, ...posts] }
       });
     }
   });
@@ -75,8 +75,6 @@ const PostForm = () => {
         Character Count: {characterCount}/500
         {error && <span className=''>Something went wrong...</span>}
       </p>
-
-        
       </form>
     </div>
   );

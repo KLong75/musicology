@@ -31,8 +31,9 @@ const ResponseForm = ({ postId }) => {
 
   return (
     <div>
-      <h4>Do want to jam?</h4>
-      <form 
+      <h5>Think you might like to jam with this person? Leave a response below:</h5>
+      <form
+        id='response-form' 
         className='' 
         onSubmit={handleFormSubmit}
       >

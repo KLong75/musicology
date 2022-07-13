@@ -31,13 +31,13 @@ const SinglePost = () => {
     <div>
       <div className="card">
         <p className="card-header">
-          <span style={{ fontWeight: 700 }} className="">
+          <span style={{ fontWeight: 700 }} className="card-title">
             <Link 
               to={`/profile/${post.username}`}
               style={{ fontWeight: 700 }}
               className=''
             >
-             {post.username}
+              {post.username}
             </Link>{' '}
           </span>{' '}
           posted on {post.createdAt}
@@ -48,7 +48,11 @@ const SinglePost = () => {
       </div>
       
       {post.responseCount > 0 && (
+        <>
+
+        <p></p>
         <ResponseList responses={post.responses} />
+        </>
       )}
       {Auth.loggedIn() && <ResponseForm postId={post._id} />}
       </div>

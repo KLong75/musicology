@@ -1,20 +1,13 @@
-/* body {
+/* whole app css */
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
-
 html, #root {
-  --bg: #F69000;
+  /* --bg: #F69000;
   --bg-accent: #F6C624;
   --secondary: #53B1B1;
   --secondary-accent: #1C5858;
@@ -23,19 +16,19 @@ html, #root {
   --nav-size: 60px;
   --border: 1px solid #474A4D;
   --border-radius: 8px;
-  --speed: 500ms;
+  --speed: 500ms;  */
 }  
 
 html, #root {
-  background-color: #11222C;
+  /* background-color: #11222C; */
   min-height: 100%;
 } 
 
-/* main, header, footer {
-  background-color: #11222C;
-  position: relative;
-  display: flex;
-}  */
+main {
+  /* background-color: #11222C; */
+   position: relative; 
+   /* display: flex;    */
+}  
 
 .container {
   max-width: 100%;
@@ -44,29 +37,29 @@ html, #root {
 /* Bulletin Board */
 .listTitle {
   color: #F69000;
-}
+} 
 
 /* Forms */
 form {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
   justify-content: center;
   align-content: center;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 } 
 
 .form-input {
   justify-content: center;
 }
 
-/* form {
+form {
   position: relative;
-  background-color: #53B1B1;
-} */
+  /* background-color: #53B1B1;  */
+} 
 
 form h2 {
-  color: #11222C;
+  /* color: #11222C; */
 }
 
 :focus-within #login-email, :focus-within #login-pw, :focus-within #login-username {
@@ -74,7 +67,7 @@ form h2 {
 }
 
 #btn {
-  background-color: #1C5858;
+  /* background-color: #1C5858; */
   color: #DADCE1;
   justify-content: center;
 }
@@ -84,18 +77,18 @@ form h2 {
 }
 
 #signup {
-  color: #11222C;
+  /* color: #11222C; */
   align-items: center;
   text-align: center;
   position: relative;
 } 
 
 #login {
-  color: #11222C;
+  /* color: #11222C; */
   align-items: center;
   text-align: center;
   position: relative;
-}
+}  
 
 
 
@@ -156,6 +149,8 @@ form h2 {
 #app-title {
   font-size: 4rem;
 }
+
+/*landing page end*/
 
 
 

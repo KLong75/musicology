@@ -23,11 +23,11 @@ const PostList = ({ posts, title }) => {
               posted on {post.createdAt}
             </p>
             <div className="card-body">
-              <Link to={`/post/${post._id}`}>
                 <p>{post.postText}</p>
+                <Link to={`/post/${post._id}`}>
                 <p className="mb-0">
                   Responses: {post.responseCount} || Click to{' '}
-                  {post.responseCount ? 'see' : 'start'} the conversation!
+                  {post.responseCount ? 'join' : 'start'} the conversation!
                 </p>
               </Link>
             </div>
