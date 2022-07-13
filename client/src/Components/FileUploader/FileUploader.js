@@ -67,7 +67,7 @@ const FileUploader = () => {
           value="upload"
           className="btn btn-primary btn-block"
         />
-      </form>
+      </form> 
       {uploadedFile ? (
         <div>
           {/* <h3>{uploadedFile.filePath}</h3> */}

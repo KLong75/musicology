@@ -1,6 +1,9 @@
 import React from "react";
+// import React, { useEffect } from "react";
 import Auth from "../utils/auth";
 import { Navigate, useParams } from "react-router-dom";
+
+import { Link } from 'react-router-dom';
 
 import Header from "../Components/Header";
 import PostList from "../Components/PostList";
@@ -8,7 +11,12 @@ import PostForm from "../Components/PostForm";
 
 import { useQuery } from "@apollo/client";
 import { QUERY_USER, QUERY_ME } from "../utils/queries";
-import FileUploader from "../Components/FileUploader/FileUploader";
+//import FileUploader from "../Components/FileUploader/FileUploader";
+
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import devilHorns from '../assets/logo-images/cartoon_devil_horns_hand.png'
+
 
 const Profile = (props) => {
   const { username: userParam } = useParams();
@@ -41,10 +49,16 @@ const Profile = (props) => {
 
   if (!user?.username) {
     return (
+      <>
       <h4>
-        Ready to rock? You must be logged in to jam with us. Use the links above
-        to sign up or log in.
+        Ready to rock? You need an account to jam with us. What are you waiting for? Sign up or log in today!
       </h4>
+      <Stack direction='row' id='btn-stack' spacing={4} justifyContent='center'>
+        <Link to='/login'><Button variant='contained' id='login-btn'>Log In</Button></Link>
+        <Link to='/signup'> <Button variant='contained' id='signup-btn'>Sign Up</Button></Link>
+      </Stack>
+      <img src={devilHorns} alt='devil horns'/>
+    </>
     );
   }
 
@@ -58,7 +72,7 @@ const Profile = (props) => {
               <div className="col-md-4 mt-1">
                 <div className="card text-center sidebar">
                   <div className="card-body">
-                    <FileUploader />
+                    {/* <FileUploader />  */}                    
                     <div className="mt-3">
                       <h3>{userParam ? `${user.username}` : "You Rock!"}</h3>
                       <h4>Email:</h4>
@@ -117,7 +131,7 @@ const Profile = (props) => {
                     <PostList
                       posts={user.posts}
                       // title={`${user.username}'s posts...`}
-                      title={userParam ? `${user.username}` : "Your Posts"}
+                      title={userParam ? `${user.username}'s posts` : "Your Posts"}
                     />
                   </div>
                   {/* <div className=''>
