@@ -11,11 +11,7 @@ const ProfileUpdate = () => {
     <Header />
     <FileUploader />
     </>
-
   );
-
-
-
 };
 
 export default ProfileUpdate;

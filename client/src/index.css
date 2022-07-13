@@ -13,8 +13,95 @@ code {
 } */
 
 
-/* Landing Page */
+html, #root {
+  --bg: #F69000;
+  --bg-accent: #F6C624;
+  --secondary: #53B1B1;
+  --secondary-accent: #1C5858;
+  --text-color: #11222C;
+  --text-second: #DADCE1;
+  --nav-size: 60px;
+  --border: 1px solid #474A4D;
+  --border-radius: 8px;
+  --speed: 500ms;
+}  
 
+html, #root {
+  background-color: #11222C;
+  min-height: 100%;
+} 
+
+main, header, footer {
+  background-color: #11222C;
+  position: relative;
+  display: flex;
+} 
+
+.container {
+  max-width: 100%;
+}
+
+/* Bulletin Board */
+.listTitle {
+  color: #F69000;
+}
+
+/* Forms */
+form {
+  background-color: var(--secondary);
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.form-input {
+  justify-content: center;
+}
+
+/* form {
+  position: relative;
+  background-color: #53B1B1;
+} */
+
+form h2 {
+  color: #11222C;
+}
+
+:focus-within #login-email, :focus-within #login-pw, :focus-within #login-username {
+  color: #11222C;
+}
+
+#btn {
+  background-color: #1C5858;
+  color: #DADCE1;
+  justify-content: center;
+}
+
+.form-input {
+  justify-content: center;
+}
+
+#signup {
+  color: #11222C;
+  align-items: center;
+  text-align: center;
+  position: relative;
+} 
+
+#login {
+  color: #11222C;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+
+
+
+
+/* Landing Page */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
