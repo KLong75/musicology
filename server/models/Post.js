@@ -2,13 +2,13 @@ const { Schema, model } = require("mongoose");
 const responseSchema = require("./Response");
 const dateFormat = require("../utils/dateFormat");
 
-const PostSchema = new Schema(
+const postSchema = new Schema(
   {
     postText: {
       type: String,
-      required: "You need a post!",
+      required: "Enter your post.",
       minlength: 1,
-      maxlength: 200,
+      maxlength: 500,
     },
     createdAt: {
       type: Date,
@@ -28,9 +28,9 @@ const PostSchema = new Schema(
   }
 );
 
-PostSchema.virtual("responseCount").get(function () {
+postSchema.virtual("responseCount").get(function () {
   return this.responses.length;
 });
-const Post = model("Post", PostSchema);
+const Post = model("Post", postSchema);
 
 module.exports = Post;

@@ -3,10 +3,10 @@ const dateFormat = require("../utils/dateFormat");
 
 const responseSchema = new Schema(
   {
-    responseBody: {
+    responseText: {
       type: String,
-      required: true,
-      maxlength: 280,
+      required: "Enter your response.",
+      maxlength: 300,
     },
     username: {
       type: String,

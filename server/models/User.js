@@ -21,60 +21,41 @@ const userSchema = new Schema(
       minlength: 5,
     },
     age: {
-      type: Integer,
-      required: true,
+      type: Number,
     },
-    instrumnet: [
-      {
-        type: String,
-      },
-    ],
-    image: {
+    location: {
+      type: String,
+    },
+    instruments: {
       type: String,
     },
     description: {
       type: String,
-      required: true,
     },
-    genres: [
-      {
-        type: String,
-      },
-    ],
-    influences: [
-      {
-        type: String,
-      },
-    ],
-    currentProjects: [
-      {
-        type: String,
-      },
-    ],
-    pastProjects: [
-      {
-        type: String,
-      },
-    ],
+    genres: {
+      type: String,
+    },
+    influences: {
+      type: String,
+    },
+    currentProjects: {
+      type: String,
+    },
+    pastProjects: {
+      type: String,
+    },
     videoLink: {
       type: String,
     },
     audioLink: {
       type: String,
     },
-
-    Posts: [
+    posts: [
       {
         type: Schema.Types.ObjectId,
         ref: "Post",
       },
     ],
-    // friends: [
-    //   {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'User'
-    //   }
-    // ]
   },
   {
     toJSON: {
@@ -97,10 +78,6 @@ userSchema.pre("save", async function (next) {
 userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
-
-// userSchema.virtual('friendCount').get(function() {
-//   return this.friends.length;
-// });
 
 const User = model("User", userSchema);
 
