@@ -91,8 +91,8 @@ const Profile = (props) => {
                       <h4 className="py-3">Influences:</h4>
                       <p>{user.influences}</p>
                       <h4 className="py-3">Links:</h4>
-                      <a href={formatUrl(user.audioLink)} target='_blank' rel="noreferrer"><p className="fs-4">Audio Sample: Check out my tunes!</p></a>
-                      <a href={formatUrl(user.videoLink)} target='_blank' rel="noreferrer"><p className="fs-4">Video Sample: See me in action!</p></a>
+                      <a href={formatUrl(user.audioLink)} target='_blank' rel="noreferrer"><p className="fs-5">Audio Sample: Check out my tunes!</p></a>
+                      <a href={formatUrl(user.videoLink)} target='_blank' rel="noreferrer"><p className="fs-5">Video Sample: See me in action!</p></a>
                     </div>
                   </div>
                 </div>
