@@ -14,15 +14,6 @@ body{
     height: 100%;
 }
 
-.sidebar a{
-    margin-left: 10px;
-    display: block;
-    color: white;
-    padding-bottom: 10px;
-    font-size: 30px;
-    text-decoration: none;
-}
-
 .card{
     position: relative;
     display: flex;
