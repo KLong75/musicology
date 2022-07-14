@@ -21,8 +21,8 @@ const LandingPage = () => {
       </Stack>
 
       <Stack id='title-div'>
-        <h1 id='app-title'>MUSICOLOGY</h1>
-        <h2 id='app-subtitle'>For Those About to Rock</h2>
+        <h1 id='app-title' className='font-link'>MUSICOLOGY</h1>
+        <h2 id='app-subtitle' className='font-link'>For Those About to Rock</h2>
       </Stack>
 
       <Stack direction='row' id='landing-btn-stack' spacing={2} justifyContent='center'>

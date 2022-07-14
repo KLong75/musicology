@@ -13,9 +13,9 @@ const Header = () => {
     <header className=''>  
     <div className=''>
       <Link to='/bulletin_board'>
-        <h1>MUSICOLOGY</h1>
+        <h1 className='font-link'>MUSICOLOGY</h1>
       </Link>
-      <p>For Those About to Rock</p>  
+      <p className='font-link'>For Those About to Rock</p>  
 
       <nav className=''>
         {Auth.loggedIn() ? (
