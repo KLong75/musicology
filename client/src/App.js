@@ -11,6 +11,7 @@ import NoExist from './pages/NoExist';
 import SinglePost from './pages/SinglePost';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
+import ProfileUpdate from './pages/ProfileUpdate';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -54,6 +55,10 @@ function App() {
               <Route
                 path='/bulletin_board'
                 element={<BulletinBoard />}
+              />
+              <Route
+                path='/update_profile'
+                element={<ProfileUpdate />}
               />
               <Route path='/profile'>
                 <Route path=':username' element={<Profile />} />

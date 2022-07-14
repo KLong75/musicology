@@ -18,9 +18,7 @@ const BulletinBoard = () => {
     const loggedIn = Auth.loggedIn();
 
   return (
-    
     <>
-    
     <Header />
     <main>
       <div className=''>
