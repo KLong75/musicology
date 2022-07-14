@@ -1,10 +1,11 @@
 /* whole app css */
 body {
-  margin: 0;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+
 
 html, #root {
   /* --bg: #F69000;
@@ -16,80 +17,23 @@ html, #root {
   --nav-size: 60px;
   --border: 1px solid #474A4D;
   --border-radius: 8px;
-  --speed: 500ms;  */
-}  
-
-html, #root {
-  /* background-color: #11222C; */
+  --speed: 500ms;  
+  --background-color: #11222C; */
   min-height: 100%;
-} 
+  /* background-color: lightgray; */
+}  
 
 main {
   /* background-color: #11222C; */
    position: relative; 
-   /* display: flex;    */
+   /display: flex;    
+   /* background-color: grey;  */
+
 }  
 
 .container {
   max-width: 100%;
 }
-
-/* Bulletin Board */
-.listTitle {
-  color: #F69000;
-} 
-
-/* Forms */
-form {
-  /* background-color: var(--secondary); */
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap; 
-} 
-
-.form-input {
-  justify-content: center;
-}
-
-form {
-  position: relative;
-  /* background-color: #53B1B1;  */
-} 
-
-form h2 {
-  /* color: #11222C; */
-}
-
-:focus-within #login-email, :focus-within #login-pw, :focus-within #login-username {
-   color: #11222C; 
-}
-
-#btn {
-  /* background-color: #1C5858; */
-  color: #DADCE1;
-  justify-content: center;
-}
-
-.form-input {
-  justify-content: center;
-}
-
-#signup {
-  /* color: #11222C; */
-  align-items: center;
-  text-align: center;
-  position: relative;
-} 
-
-#login {
-  /* color: #11222C; */
-  align-items: center;
-  text-align: center;
-  position: relative;
-}  
-
 
 
 
@@ -150,20 +94,117 @@ form h2 {
   font-size: 4rem;
 }
 
-/*landing page end*/
+/*landing page end***********************/
+
+
+/*Sign Up and Login Pages****************************************/
+/* Forms */
+form {
+  background-color: var(--secondary);
+  /* justify-content: center;  */
+  align-content: center;
+  position: relative;
+  display: flex; 
+  flex-wrap: wrap;  
+}  
+
+/* .form-input {
+  justify-content: center;
+} */
+
+/* form {
+  position: relative;
+  background-color: #53B1B1; 
+}  */
+
+form h2 {
+  /* color: #11222C; */
+}
+
+:focus-within #login-email, :focus-within #login-pw, :focus-within #login-username {
+   /* color: #11222C;  */
+}
+
+#btn {
+  /* background-color: #1C5858; */
+  /* color: #DADCE1; */
+  justify-content: center;
+}
+
+.form-input {
+  justify-content: center;
+}
+
+#signup {
+  /* color: #11222C; */
+  align-items: center;
+  text-align: center;
+  position: relative;
+} 
+
+#login {
+  /* color: #11222C; */
+  align-items: center;
+  text-align: center;
+  position: relative;
+}  
+
+/* end Sign Up and Log in Pages ****************************************************/
 
 
 
 
 
 
+/*Header component*/
 
+
+/* end Header component******************************************************************/
+
+
+
+
+/*Bulletin Board Page */
+
+
+/* end Bulletin Board Page******************************************************************/
+
+
+
+
+
+/*Post List component*/
+
+
+/* end Post List Component******************************************************************/
+
+
+
+
+
+/*Post Form component*/
+
+
+/* end Post Form component******************************************************************/
+
+
+
+/*Response List component*/
+
+
+/* end Response List component******************************************************************/
+
+
+
+/*Response Form component*/
+
+
+/* end Response List component******************************************************************/
 
 
 /* Profile Page */
-/* body{
-  margin-top: 20px;
-  background-color: lightgray;
+body{
+  /* background-color: lightgray; */
 }
 
 .main{
@@ -172,26 +213,168 @@ form h2 {
 }
 
 .sidebar{
-  background-color: #333;
-  color: white;
-  height: 100%;
+   /* background-color: #333;  */
+  /* color: white; */
+  /* height: 100%; */
 }
 
 .sidebar a{
-  margin-left: 10px;
-  display: block;
-  color: white;
-  padding-bottom: 10px;
-  font-size: 30px;
+  /* margin-left: 10px; */
+  /* display: block; */
+  /* color: white; */
+  /* padding-bottom: 10px;  */
   text-decoration: none;
 }
 
-.card{
+/* .card{
   position: relative;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; 
+} */
 
 .content{
-  background-color: whitesmoke;
-} */
+  /* background-color: whitesmoke;  */
+}
+
+/* end Profile Page******************************************************************/
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+  #trumpet {
+    height: 12vmin;
+    pointer-events: none;
+    animation-direction: reverse;
+  }
+  
+  #bass{
+    height: 34vmin;
+  }
+  
+  #drums{
+    animation-direction: reverse;
+    height: 34vmin;
+  }
+  
+  #keyboard{
+    height: 30vmin; 
+  }
+  
+  #guitar{
+    height: 28vmin;
+  }
+  
+  #trombone{
+    animation-direction: reverse;
+    height: 24vmin;
+  }
+  
+  #title-div {
+    text-align: center;
+  }
+  
+  #app-title {
+    font-size: 4rem;
+  }
+
+  #app-subtitle {
+    font-size: 1.8rem;
+  }
+ 
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+ 
+
+  #trumpet {
+    height: 10vmin;
+    pointer-events: none;
+    animation-direction: reverse;
+  }
+  
+  #bass{
+    height: 32vmin;
+  }
+  
+  #drums{
+    animation-direction: reverse;
+    height: 30vmin;
+  }
+  
+  #keyboard{
+    height: 28vmin; 
+  }
+  
+  #guitar{
+    height: 24vmin;
+  }
+  
+  #trombone{
+    animation-direction: reverse;
+    height: 22vmin;
+  }
+  
+  #title-div {
+    text-align: center;
+  }
+  
+  #app-title {
+    font-size: 3rem;
+  }
+
+  #app-subtitle {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 605PX) {
+  #trumpet {
+    height: 0vmin;
+    pointer-events: none;
+    animation-direction: reverse;
+  }
+  
+  #bass{
+    height: 0vmin;
+  }
+  
+  #drums{
+    animation-direction: reverse;
+    height: 42vmin;
+  }
+  
+  #keyboard{
+    height: 0vmin; 
+  }
+  
+  #guitar{
+    height: 38vmin;
+  }
+  
+  #trombone{
+    animation-direction: reverse;
+    height: 0vmin;
+  }
+  
+  #title-div {
+    text-align: center;
+  }
+  
+  #app-title {
+    font-size: 2rem;
+  }
+
+  #app-subtitle {
+    font-size: .8rem;
+  }
+}
+
+
+
+

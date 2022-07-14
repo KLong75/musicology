@@ -14,7 +14,7 @@ import Stack from '@mui/material/Stack';
 const LandingPage = () => {
   return (
     <>
-      <Stack direction='row' id='' spacing={6} justifyContent='space-evenly' alignItems='center' >
+      <Stack direction={{ xs: 'column', sm: 'row' }} id='' spacing={6} justifyContent='space-evenly' alignItems='center' >
         <img src={trumpet} className="App-logo" id='trumpet' alt='trumpet' /> 
         <img src={guitar} className="App-logo"  id='guitar' alt="guitar"/> 
         <img src={trombone} className="App-logo"  id='trombone' alt='trombone'/> 
@@ -22,15 +22,15 @@ const LandingPage = () => {
 
       <Stack id='title-div'>
         <h1 id='app-title'>MUSICOLOGY</h1>
-        <h2>For Those About to Rock</h2>
+        <h2 id='app-subtitle'>For Those About to Rock</h2>
       </Stack>
 
-      <Stack direction='row' id='btn-stack' spacing={4} justifyContent='center'>
+      <Stack direction='row' id='landing-btn-stack' spacing={2} justifyContent='center'>
         <Link to='/login'><Button variant='contained' id='login-btn'>Log In</Button></Link>
         <Link to='/signup'> <Button variant='contained' id='signup-btn'>Sign Up</Button></Link>
       </Stack>
      
-      <Stack direction='row' id='' spacing={6} justifyContent='space-evenly' alignItems='center'>
+      <Stack direction={{ xs: 'column', sm: 'row' }} id='' spacing={6} justifyContent='space-evenly' alignItems='center'>
         <img src={keyboard} className="App-logo"  id='keyboard' alt='keyboard'/> 
         <img src={drums2} className="App-logo" id='drums' alt='drumset' /> 
         <img src={bass} className="App-logo"  id='bass' alt='bass guitar'/> 

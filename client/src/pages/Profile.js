@@ -15,6 +15,7 @@ import { QUERY_USER, QUERY_ME } from "../utils/queries";
 
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+// import Avatar from '@mui/material/Avatar'
 import devilHorns from '../assets/logo-images/cartoon_devil_horns_hand.png'
 
 
@@ -114,11 +115,11 @@ const Profile = (props) => {
                   <div className="card-body">
                     <div className="row">
                       <div className="col-md-3">
-                        <h5>Current Projects:</h5>
+                        <h5>Current:</h5>
                         <p>{user.currentProjects}</p>
                       </div>
                       <div className="col-md-3">
-                        <h5>Past Projects:</h5>
+                        <h5>Past:</h5>
                         <p>{user.pastProjects}</p>
                       </div>
                     </div>

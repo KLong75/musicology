@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { ADD_RESPONSE } from '../../utils/mutations'
 
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
 const ResponseForm = ({ postId }) => {
   const [responseText, setBody] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
@@ -37,21 +40,27 @@ const ResponseForm = ({ postId }) => {
         className='' 
         onSubmit={handleFormSubmit}
       >
+        <Stack spacing={2} justifyContent='left'>
         <textarea
           placeholder='Respond to this post...'
           value={responseText}
           className='form-input'
           onChange={handleChange}
         ></textarea>
-        <button className='btn' type='submit'>
-          Submit
-        </button>
+        
         <p 
         className={`${characterCount === 300 || error ? 'text-error' : ''}`}
       >
         Character Count: {characterCount}/300
         {error && <span className=''>Something went wrong with your response...</span>}
       </p>
+      <Button className='btn'variant='contained'
+         type='submit' size='small'>Submit
+      </Button>
+
+
+
+      </Stack>
       </form>
       
       {error && <div>Something went wrong...</div>}

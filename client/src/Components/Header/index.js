@@ -13,7 +13,7 @@ const Header = () => {
     <header className=''>  
     <div className=''>
       <Link to='/bulletin_board'>
-        <h1>Musicology</h1>
+        <h1>MUSICOLOGY</h1>
       </Link>
       <p>For Those About to Rock</p>  
 
@@ -21,8 +21,6 @@ const Header = () => {
         {Auth.loggedIn() ? (
           <>
           <Stack direction='row' id='btn-stack' spacing={2} justifyContent='right'>
-         
-      
             <Link to='/profile'>My Profile</Link>
             <Link to='/bulletin_board'>Bulletin Board</Link>
             <Link to='/update_profile'>Update Profile</Link>
@@ -30,7 +28,6 @@ const Header = () => {
               Logout
             </a>
           </Stack>
-       
           </>
         ) : (
           <>
