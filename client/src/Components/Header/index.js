@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
+import Navbar from '../Navbar/Navbar';
 
 const Header = () => {
   const logout = event => {
@@ -11,6 +12,9 @@ const Header = () => {
   return (
     <header className=''>  
     <div className=''>
+
+      {/* <Navbar/> */}
+        
       <Link to='/bulletin_board'>
         <h1>Musicology</h1>
       </Link>
