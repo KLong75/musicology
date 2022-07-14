@@ -89,8 +89,8 @@ const SignUp = () => {
           </div>
 
           <div className='row justify-content-center align-items-center'>
-            <TextField required className="m-2 col-auto col-md-4" id="password" type='password' placeholder='******' value={formState.password} label="Password" name='password' variant="filled" onChange={handleChange} />
-            <TextField  className="m-2 col-auto col-md-4" id="instruments" placeholder='drums, bass, guitar, kazoo' value={formState.instruments} label="Instrument(s)" name='instruments' variant="filled" onChange={handleChange} /> 
+            <TextField required className="m-2 col-auto col-md-4" id="password" type='password' placeholder='at least 5 characters long' value={formState.password} label="Password" name='password' variant="filled" onChange={handleChange} />
+            <TextField  className="m-2 col-auto col-md-4" id="instruments" placeholder='drums, bass, guitar, kazoo, etc.' value={formState.instruments} label="Instrument(s)" name='instruments' variant="filled" onChange={handleChange} /> 
           </div>
 
           <div className='row justify-content-center align-items-center'>
@@ -194,7 +194,7 @@ const SignUp = () => {
           </div>
 
           <div className='row justify-content-center align-items-center'>
-            <TextField className="m-2 col-auto col-md-4" id="desctiption" placeholder='beginning guitarist etc.' value={formState.description} label="Description" name='description' variant="filled" onChange={handleChange} />
+            <TextField className="m-2 col-auto col-md-4" id="desctiption" placeholder='beginning guitarist, etc.' value={formState.description} label="Description" name='description' variant="filled" onChange={handleChange} />
             <TextField className="m-2 col-auto col-md-4" id="genres" placeholder='rock, punk, metal, jazz, etc.' value={formState.genres} label="Genre(s)" name='genres' variant="filled" onChange={handleChange} /> 
           </div>
 

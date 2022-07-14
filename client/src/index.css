@@ -114,10 +114,6 @@ form {
   background-color: #53B1B1; 
 }  */
 
-
-
-
-
 #btn {
   justify-content: center;
 }
@@ -139,9 +135,6 @@ form {
 }  
 /* end Sign Up and Log in Pages ****************************************************/
 
-
-
-
 /*Header component*/
 header {
   margin-top: 1.5rem;
@@ -152,6 +145,10 @@ header {
 
 #header-title {
   font-size: 3rem; 
+}
+
+#header-icon {
+  height: 4vmin;
 }
 /* end Header component******************************************************************/
 
@@ -198,14 +195,7 @@ header {
 
 /* end Post List Component******************************************************************/
 
-
-
-
-
 /*Post Form component*/
-
-
-
 #post-form-text-area{
   width: 100%;
   height: 5rem;
@@ -284,15 +274,6 @@ footer {
   font-size: small;
 }
  /* end Footer component*/
-
-
-
-
-
-
-
-
-
 
  
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */

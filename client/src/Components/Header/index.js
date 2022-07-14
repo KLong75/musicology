@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 import Stack from '@mui/material/Stack';
 
+import guitar from '../../assets/logo-images/guitar.png';
+import devilHorns from '../../assets/logo-images/cartoon_devil_horns_hand.png';
+
+
 const Header = () => {
   const logout = event => {
     event.preventDefault();
@@ -19,13 +23,18 @@ const Header = () => {
       <nav className=''>
         {Auth.loggedIn() ? (
           <>
-          <Stack direction='row' id='btn-stack' spacing={2} justifyContent='right'>
+          <Stack direction='row' id='btn-stack' spacing={1} justifyContent='right'>
+            
+            <img src={guitar} alt='' id='header-icon' />
             <Link to='/profile'>My Profile</Link>
+            <img src={devilHorns} alt='' id='header-icon' />
             <Link to='/bulletin_board'>Bulletin Board</Link>
-            <Link to='/update_profile'>Update Profile</Link>
+            {/* <Link to='/update_profile'>Update Profile</Link> */}
+            <img src={guitar} alt='' id='header-icon' />
             <a href='/' onClick={logout}>
               Logout
             </a>
+            {/* <img src={mic} alt='' id='header-icon' /> */}
           </Stack>
           </>
         ) : (

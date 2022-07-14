@@ -5,9 +5,9 @@ import { Stack } from '@mui/material';
 const Footer = () => {
   return (
     <footer className=''>
-      <img src={guitar} id='footer-guitar' alt='music notes'/>
+      <img src={guitar} id='footer-guitar' alt='guitar'/>
       <span className='font-link' id='footer-tag'> "It's a long way to the top if you want to rock and roll."</span>
-      <img src={guitar} id='footer-guitar' alt='music notes'/>
+      <img src={guitar} id='footer-guitar' alt='guitar'/>
       <Stack>
       <span id='copy-write'> ©2022 </span>
       <span id='copy-write'>by U, Me, and the Kevins</span>
