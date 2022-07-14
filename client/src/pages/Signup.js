@@ -79,7 +79,7 @@ const SignUp = () => {
     justifyContent="center"
     style={{ minHeight: '100vh' }}
     >
-      <form onSubmit={handleFormSubmit} className="align-items-center justify-content-center" noValidate autoComplete="off" >
+      <form onSubmit={handleFormSubmit} className="align-items-center justify-content-center " noValidate autoComplete="off" >
         <h2 id="signup" className="row col-12 m-2 align-items-center justify-content-center font-link">Sign Up</h2>
         <Stack direction='row' alignItems="center" className='row form-input justify-content-center'>
   

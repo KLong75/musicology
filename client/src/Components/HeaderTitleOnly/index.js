@@ -9,9 +9,9 @@ const HeaderTitleOnly = () => {
     <header className=''>  
       <Stack justifyContent='space-evenly' alignItems='center'>
       <Link to='/' id='header-title-only-title'>
-        <h1 className='font-link'>MUSICOLOGY</h1>
+        <h1 className='font-link' id=''>MUSICOLOGY</h1>
       </Link>
-      <h4 className='font-link'>For Those About to Rock</h4>  
+      <h5 className='font-link'>For Those About to Rock</h5>  
       </Stack>
   </header>
   );

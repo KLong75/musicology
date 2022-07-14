@@ -15,7 +15,7 @@ const LandingPage = () => {
   return (
     <>
       <Stack direction={{ xs: 'column', sm: 'row' }} id='' spacing={6} justifyContent='space-evenly' alignItems='center' >
-        <img src={trumpet} className="App-logo" id='trumpet' alt='trumpet' /> 
+        <img src={trumpet} className="App-logo " id='trumpet' alt='trumpet' /> 
         <img src={guitar} className="App-logo"  id='guitar' alt="guitar"/> 
         <img src={trombone} className="App-logo"  id='trombone' alt='trombone'/> 
       </Stack>

@@ -18,6 +18,7 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import devilHorns from '../assets/logo-images/cartoon_devil_horns_hand.png'
 import Footer from "../Components/Footer";
+import HeaderTitleOnly from "../Components/HeaderTitleOnly";
 
 
 const Profile = (props) => {
@@ -52,6 +53,7 @@ const Profile = (props) => {
   if (!user?.username) {
     return (
       <>
+      <HeaderTitleOnly />
       <h4 className="font-link">
         Ready to rock? You need an account to jam with us. What are you waiting for? Sign up or log in today!
       </h4>
