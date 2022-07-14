@@ -233,6 +233,7 @@ header {
 #user-project-card {
   border: solid;
 }
+
 #profile-post-list-box {
   border: solid;
 }
@@ -308,10 +309,6 @@ footer {
     font-size: 1.8rem;
   }
 
-  #post-card{
-    border-left:0em;
-    border-right:0em;
-  }
 
   #footer-guitar {
     height: 6vmin;
@@ -328,12 +325,16 @@ footer {
   #copy-write{
     font-size: small;
   }
+
+  #profile-post-list-box {
+    border: 0em;
+  }
  
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
- 
+
 
   #trumpet {
     height: 10vmin;
