@@ -1,14 +1,4 @@
 /* whole app css */
-/* * {
-  box-sizing: border-box;
-} */
-
-/* div {
-  display: block;
-} */
-
-
-
 .font-link {
   font-family: 'Permanent Marker';
 }
@@ -19,7 +9,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-
 
 html, #root {
   min-height: 100%; 
