@@ -5,7 +5,7 @@ import PostForm from '../Components/PostForm';
 import PostList from '../Components/PostList';
 import Footer from '../Components/Footer';
 
-import devilHorns from '../assets/logo-images/cartoon_devil_horns_hand.png';
+// import devilHorns from '../assets/logo-images/cartoon_devil_horns_hand.png';
 
 import Auth from '../utils/auth';
 
@@ -32,7 +32,7 @@ const BulletinBoard = () => {
           
         )}
        
-          <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`} id='bulletin-board-posts'>
+          <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8 '}`} id='bulletin-board-posts'>
             {loading ? (
               <div>Loading...</div>
             ) : (

@@ -7,6 +7,8 @@
   display: block;
 } */
 
+
+
 .font-link {
   font-family: 'Permanent Marker';
 }
@@ -20,19 +22,8 @@ body {
 
 
 html, #root {
-  /* --bg: #F69000;
-  --bg-accent: #F6C624;
-  --secondary: #53B1B1;
-  --secondary-accent: #1C5858;
-  --text-color: #11222C;
-  --text-second: #DADCE1;
-  --nav-size: 60px;
-  --border: 1px solid #474A4D;
-  --border-radius: 8px;
-  --speed: 500ms;  
-  --background-color: #11222C; */
-   min-height: 100%; 
-  /* background-color: lightgray; */
+  min-height: 100%; 
+ 
 }  
 
 main {
@@ -160,6 +151,8 @@ form {
 header {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /* end Header component******************************************************************/
@@ -211,6 +204,10 @@ header {
    border-top: solid; 
 }
 
+
+
+
+
 /* end Post List Component******************************************************************/
 
 
@@ -245,19 +242,14 @@ header {
 #response-list-card-body {
   border-top: solid;
 }
-
 /* end Response List component******************************************************************/
-
-
 
 /*Response Form component*/
 #response-text-area{
   width: 100%;
   border: solid;
 }
-
-
-/* end Response List component******************************************************************/
+/* end Response Form component******************************************************************/
 
 
 /* Profile Page */
@@ -303,7 +295,18 @@ footer {
 #copy-write{
   font-size: small;
 }
+ /* end Footer component*/
 
+
+
+
+
+
+
+
+
+
+ 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 

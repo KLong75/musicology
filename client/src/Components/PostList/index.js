@@ -11,7 +11,7 @@ const PostList = ({ posts, title }) => {
       <h3 className='font-link'>{title}</h3>
       {posts &&
         posts.map(post => (
-          <div key={post._id} className="card mb-3" id='post-card'>
+          <div key={post._id} className="card mb-3 shadow-lg" id='post-card'>
             <p className="card-header font-link">
               <Link
                 to={`/profile/${post.username}`}

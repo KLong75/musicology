@@ -73,7 +73,7 @@ const Profile = (props) => {
             <div className="row">
               <div className="col-md-4 mt-1">
                 <div className="card text-center sidebar">
-                  <div className="card-body" id='user-data-card'>
+                  <div className="card-body shadow-lg" id='user-data-card'>
                     <img src="https://cdn-images.audioaddict.com/1/5/d/b/a/a/15dbaa1f6a26c234d4977f10e9ea8808.png" className="rounded-circle" width="150" alt='guitar-icon'></img>
                     <div className="mt-3">
                       <h1 className="font-link">{userParam ? `${user.username}` : 'You Rock!'}</h1>
@@ -99,7 +99,7 @@ const Profile = (props) => {
                 </div>
               </div>
               <div className="col-md-8 mt-1">
-                <div className="card mb-3 content" id='user-project-card'>
+                <div className="card mb-3 content shadow-lg" id='user-project-card'>
                   <h3 className="text-center m-3 pt-3 font-link">Projects</h3>
                   <div className="card-body">
                     <div className="row justify-content">
@@ -114,7 +114,7 @@ const Profile = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="card mb-3 content" id='profile-post-list-box'>
+                <div className="card mb-3 content shadow-lg" id='profile-post-list-box'>
                 <div className="mx-auto col-12 mb-3 col-lg-8">
                   <PostList
                     className='font-link'

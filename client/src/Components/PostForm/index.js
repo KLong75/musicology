@@ -59,24 +59,22 @@ const PostForm = () => {
 
 
   return (
-    <div className='font-link'>
+    <div className='font-link '>
       <h5>Post on the Bulletin Board</h5>
-      <form className=''
+      <form className='flex-row justify-center justify-space-between-md align-stretch '
       onSubmit={handleFormSubmit}
       >
         <textarea
           id='post-form-text-area'
           placeholder="Find your last new drummer..."
           value={postText}
-          className='form-input '
+          className='form-input col-12 col-md-9 shadow-lg'
           onChange={handleChange}
         ></textarea>
 
         <Stack spacing={2} justifyContent='left'>
 
-        
-
-        <p className={`${characterCount === 500 || error ? 'text-error' : ''}`} id='post-form-char-count'>
+        <p className={`m-0 ${characterCount === 500 ||  error ? 'text-error' : ''}`} id='post-form-char-count'>
         Character Count: {characterCount}/500
         {error && <span className=''>Something went wrong...</span>}
       </p>
@@ -84,8 +82,7 @@ const PostForm = () => {
       <Button className='btn'variant='contained'
          type='submit' size='small' id='post-form-submit-btn'>Submit
       </Button>
-
-        </Stack>
+      </Stack>
 
 
       </form>

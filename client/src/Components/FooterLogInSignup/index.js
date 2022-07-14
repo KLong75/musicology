@@ -1,7 +1,7 @@
 import React from 'react';
 import drums from '../../assets/logo-images/drums2.png';
 
-import { Stack } from '@mui/material';
+
 const Footer = () => {
   return (
     <footer className=''>
