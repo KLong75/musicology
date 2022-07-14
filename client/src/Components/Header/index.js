@@ -10,11 +10,9 @@ const Header = () => {
   };
 
   return (
-    <header className=''>  
+    <header className='font-link'>  
     <div className=''>
-      <Link to='/bulletin_board'>
         <h1 className='font-link'>MUSICOLOGY</h1>
-      </Link>
       <p className='font-link'>For Those About to Rock</p>  
 
       <nav className=''>

@@ -1,4 +1,11 @@
 /* whole app css */
+/* * {
+  box-sizing: border-box;
+} */
+
+/* div {
+  display: block;
+} */
 
 .font-link {
   font-family: 'Permanent Marker';
@@ -24,24 +31,18 @@ html, #root {
   --border-radius: 8px;
   --speed: 500ms;  
   --background-color: #11222C; */
-  min-height: 100%;
+   min-height: 100%; 
   /* background-color: lightgray; */
 }  
 
 main {
   /* background-color: #11222C; */
-   position: relative; 
-   /display: flex;    
+   position: relative;  
+   display: flex;      
    /* background-color: grey;  */
+   margin: 2rem;
 
 }  
-
-.container {
-  max-width: 100%;
-}
-
-
-
 
 /* Landing Page */
 @media (prefers-reduced-motion: no-preference) {
@@ -105,7 +106,7 @@ main {
 /*Sign Up and Login Pages****************************************/
 /* Forms */
 form {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
   /* justify-content: center;  */
   align-content: center;
   position: relative;
@@ -122,13 +123,9 @@ form {
   background-color: #53B1B1; 
 }  */
 
-form h2 {
-  /* color: #11222C; */
-}
 
-:focus-within #login-email, :focus-within #login-pw, :focus-within #login-username {
-   /* color: #11222C;  */
-}
+
+
 
 #btn {
   /* background-color: #1C5858; */
@@ -159,27 +156,60 @@ form h2 {
 
 
 
-
-
 /*Header component*/
-
+header {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 
 /* end Header component******************************************************************/
 
 
 
+/*HeaderTitleOnlycomponent*/
+
+#header-title-only-title {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* end HeaderTitleOnly component******************************************************************/
+
+
 
 /*Bulletin Board Page */
+#end-of-board-tag {
+  text-align: center;
+}
 
+
+
+#bulletin-board-posts{
+  
+}
 
 /* end Bulletin Board Page******************************************************************/
 
 
+/* Single Post Page */
+#single-post-box {
+  border: solid;
+}
 
+#single-post-card-body {
+  border-top: solid;
+}
 
 
 /*Post List component*/
-
+#post-card{
+  border: solid;
+  
+}
+#post-card-body{
+   border-top: solid; 
+}
 
 /* end Post List Component******************************************************************/
 
@@ -191,34 +221,88 @@ form h2 {
 
 
 /* end Post Form component******************************************************************/
+#post-form-text-area{
+  width: 100%;
+  height: 5rem;
+  border: solid;
+}
 
+#post-form-char-count{
+  margin-bottom: 0;
+}
+
+#post-form-submit-btn{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
 
 /*Response List component*/
+#response-list-card{
+  border: solid;
+}
 
+#response-list-card-body {
+  border-top: solid;
+}
 
 /* end Response List component******************************************************************/
 
 
 
 /*Response Form component*/
+#response-text-area{
+  width: 100%;
+  border: solid;
+}
 
 
 /* end Response List component******************************************************************/
 
 
 /* Profile Page */
+#devil-horn-error-img {
+  height: 32vmin;
+  margin-top: 6rem;
+  margin-left: 10rem
+}
 
+#user-data-card {
+  border:solid;
+}
 
-
-
-
-
-
+#user-project-card {
+  border: solid;
+}
+#profile-post-list-box {
+  border: solid;
+}
 
 /* end Profile Page******************************************************************/
 
+/*Footer component*/
 
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#footer-guitar {
+  height: 8vmin;
+}
+
+#footer-drums {
+  height: 8vmin;
+}
+
+#footer-tag {
+  font-size: 1rem;
+}
+
+#copy-write{
+  font-size: small;
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -261,6 +345,11 @@ form h2 {
 
   #app-subtitle {
     font-size: 1.8rem;
+  }
+
+  #post-card{
+    border-left:0em;
+    border-right:0em;
   }
  
 }

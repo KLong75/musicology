@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const ResponseList = ({ responses }) => {
   return (
-    <div className='card'>
+    <div className='card' id='response-list-card'>
       <div className='card-header'>
-        <span className=''>Responses:</span>
+        <h5 className='font-link'>Responses:</h5>
       </div>
-      <div className='card-body'>
+      <div className='card-body' id='response-list-card-body'>
         {responses &&
           responses.map(response => (
             <p className='pill mb-3' key={response._id}>

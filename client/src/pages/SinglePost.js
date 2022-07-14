@@ -9,6 +9,7 @@ import ResponseList from '../Components/ResponseList';
 
 import { useQuery } from '@apollo/client';
 import { QUERY_POST } from '../utils/queries';
+import Footer from '../Components/Footer';
 
 
 const SinglePost = () => {
@@ -29,8 +30,8 @@ const SinglePost = () => {
     <Header />
     <main>
     <div>
-      <div className="card">
-        <p className="card-header">
+      <div className="card" id='single-post-box'>
+        <p className="card-header font-link">
           <span style={{ fontWeight: 700 }} className="card-title">
             <Link 
               to={`/profile/${post.username}`}
@@ -42,7 +43,7 @@ const SinglePost = () => {
           </span>{' '}
           posted on {post.createdAt}
         </p>
-        <div className="card-body">
+        <div className="card-body" id='single-post-card-body'>
           <p>{post.postText}</p>
         </div>
       </div>
@@ -57,6 +58,7 @@ const SinglePost = () => {
       {Auth.loggedIn() && <ResponseForm postId={post._id} />}
       </div>
     </main>
+    <Footer />
     </>
   );
 };

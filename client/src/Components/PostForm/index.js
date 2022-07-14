@@ -4,6 +4,9 @@ import { useMutation } from '@apollo/client';
 import { ADD_POST } from '../../utils/mutations';
 import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
 
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
 const PostForm = () => {
   const [postText, setText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
@@ -56,25 +59,35 @@ const PostForm = () => {
 
 
   return (
-    <div>
-      <h4>Make a Post on the Bulletin Board</h4>
+    <div className='font-link'>
+      <h5>Post on the Bulletin Board</h5>
       <form className=''
       onSubmit={handleFormSubmit}
       >
         <textarea
-          placeholder="Let's rock..."
+          id='post-form-text-area'
+          placeholder="Find your last new drummer..."
           value={postText}
           className='form-input '
           onChange={handleChange}
         ></textarea>
-        <button className='btn' type='submit'>
-          Submit
-        </button>
 
-        <p className={`${characterCount === 500 || error ? 'text-error' : ''}`}>
+        <Stack spacing={2} justifyContent='left'>
+
+        
+
+        <p className={`${characterCount === 500 || error ? 'text-error' : ''}`} id='post-form-char-count'>
         Character Count: {characterCount}/500
         {error && <span className=''>Something went wrong...</span>}
       </p>
+
+      <Button className='btn'variant='contained'
+         type='submit' size='small' id='post-form-submit-btn'>Submit
+      </Button>
+
+        </Stack>
+
+
       </form>
     </div>
   );

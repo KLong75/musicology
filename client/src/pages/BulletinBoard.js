@@ -3,6 +3,9 @@ import React from 'react';
 import Header from '../Components/Header';
 import PostForm from '../Components/PostForm';
 import PostList from '../Components/PostList';
+import Footer from '../Components/Footer';
+
+import devilHorns from '../assets/logo-images/cartoon_devil_horns_hand.png';
 
 import Auth from '../utils/auth';
 
@@ -21,13 +24,15 @@ const BulletinBoard = () => {
     <>
     <Header />
     <main>
-      <div className=''>
+      <div className='flex-row justify-space-between'>
         {loggedIn && (
-          <div className=''>
+          <div className='col-12 mb-3'>
             <PostForm />
           </div>
+          
         )}
-          <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
+       
+          <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`} id='bulletin-board-posts'>
             {loading ? (
               <div>Loading...</div>
             ) : (
@@ -38,16 +43,14 @@ const BulletinBoard = () => {
             )}
           </div>
           {loggedIn && userData ? (
-          <div className=''>
-            {/* This div will only appear when a user is logged in */}
-            "It's a long way to the top if you wanna rock and roll."
+          <div className='col-12 col-lg-3 mb-3' id='end-of-board-tag'>
+            {/* This div will only appear when a user is logged in. What should we do with it?*/}
           </div>
           ) : null}
       </div>
     </main>
-    
+    <Footer />
     </>
-   
   );
 };
 

@@ -33,21 +33,22 @@ const ResponseForm = ({ postId }) => {
   };
 
   return (
-    <div>
+    <div className='font-link'>
       <h5>Think you might like to jam with this person? Leave a response below:</h5>
       <form
         id='response-form' 
         className='' 
         onSubmit={handleFormSubmit}
       >
-        <Stack spacing={2} justifyContent='left'>
+        
         <textarea
-          placeholder='Respond to this post...'
+          id='response-text-area'
+          placeholder="You're about to start rocking..."
           value={responseText}
           className='form-input'
           onChange={handleChange}
         ></textarea>
-        
+        <Stack spacing={2} justifyContent='left'>
         <p 
         className={`${characterCount === 300 || error ? 'text-error' : ''}`}
       >
@@ -57,7 +58,6 @@ const ResponseForm = ({ postId }) => {
       <Button className='btn'variant='contained'
          type='submit' size='small'>Submit
       </Button>
-
 
 
       </Stack>
