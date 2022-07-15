@@ -9,6 +9,11 @@ MUSICOLOGY is a networking application for musicians. Users can sign up to creat
 https://musicology-umekev.herokuapp.com/
 
 ## Screenshots of Application
+![musicology-landing-desktop](https://user-images.githubusercontent.com/98487770/179273370-38cf94b9-d119-4e1b-9225-aee6b898f39e.png)
+![musicology-landing-mobile](https://user-images.githubusercontent.com/98487770/179273438-cc829ccf-961c-4c11-a0d3-452a4390cbd5.png)
+![musicology-bulletin-mobile](https://user-images.githubusercontent.com/98487770/179273484-94015dff-27fc-47f5-8f87-3687cbc830b7.png)
+![musicology-profile-desktop](https://user-images.githubusercontent.com/98487770/179273524-1dec5ea1-7d32-47ae-ae50-e9992ff248c5.png)
+![musicology-singlepost-desktop](https://user-images.githubusercontent.com/98487770/179273537-e77cd4a5-3f78-45f6-9ab2-b3548c145999.png)
 
 ## Table of Contents
 - [Installation](#installation)
