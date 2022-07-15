@@ -49,6 +49,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## Built By U, Me, and the Kevins
+Kevin Long
+https://github.com/KLong75
+Kevin Heaton
+https://github.com/KevinHeaton
+Govnor Payne
+https://github.com/GPain2007
+Scott Obregon
+https://github.com/ObregonScott
+Roy Velasquez
+https://github.com/Roy4th
+
 ## Contributing
 If you are interested in contributing please contact by email!
 
