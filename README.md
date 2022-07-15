@@ -14,7 +14,7 @@ https://musicology-umekev.herokuapp.com/
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributors](#contributors)
+- [Contributing](#contributing)
 - [Built by](#built)
 - [Tests](#tests)
 - [Questions](#questions)
