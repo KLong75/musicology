@@ -14,8 +14,8 @@ https://musicology-umekev.herokuapp.com/
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Made by](#made)
 - [Contributing](#contributing)
-- [Built by](#built)
 - [Tests](#tests)
 - [Questions](#questions)
     
@@ -50,7 +50,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Built 
+## Made by 
 by U, Me, and the Kevins
 Kevin Long
 https://github.com/KLong75
