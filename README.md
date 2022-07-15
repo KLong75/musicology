@@ -51,7 +51,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Contributors
-MUSICOLGY was created by U, Me, and the Kevins
+MUSICOLGY was created by U, Me, and the Kevins: 
 Kevin Long
 https://github.com/KLong75
 Kevin Heaton
