@@ -79,7 +79,7 @@ const Profile = (props) => {
                   <div className="card-body shadow-lg" id='user-data-card'>
                     <img src="https://cdn-images.audioaddict.com/1/5/d/b/a/a/15dbaa1f6a26c234d4977f10e9ea8808.png" className="rounded-circle" width="150" alt='guitar-icon'></img>
                     <div className="mt-3">
-                      <h1 className="font-link">{userParam ? `${user.username}` : 'Welcome Back!'}</h1>
+                      <h1 className="font-link" id='profile-username'>{userParam ? `${user.username}` : 'Welcome Back!'}</h1>
                       <h4 className="py-3 font-link">Email:</h4>
                       <p>{user.email}</p>
                       <h4 className="py-3 font-link ">Age:</h4>

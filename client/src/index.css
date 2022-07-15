@@ -226,6 +226,10 @@ header {
 
 
 /* Profile Page */
+#profile-username {
+  font-size: 3rem;
+}
+
 #devil-horn-error-img {
   height: 28vmin;
   margin-top: 6rem;
@@ -281,11 +285,13 @@ footer {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 
+  #profile-username {
+    font-size: 2rem;
+  }
+
   #header-title-text {
     font-size: 3rem;
   }
-
-
 
   #trumpet {
     height: 10vmin;
