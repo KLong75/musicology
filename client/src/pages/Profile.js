@@ -12,7 +12,6 @@ import PostForm from "../Components/PostForm";
 
 import { useQuery } from "@apollo/client";
 import { QUERY_USER, QUERY_ME } from "../utils/queries";
-//import FileUploader from "../Components/FileUploader/FileUploader";
 
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
@@ -54,14 +53,16 @@ const Profile = (props) => {
     return (
       <>
       <HeaderTitleOnly />
-      <h4 className="font-link">
-        Ready to rock? You need an account to jam with us. What are you waiting for? Sign up or log in today!
-      </h4>
-      <Stack direction='row' id='btn-stack' spacing={4} justifyContent='center'>
+      <div id='need-account-div'>
+      <h5 className="font-link">
+        Ready to rock? You need an account to jam with us. Sign up or log in today!
+      </h5>
+      <Stack direction='row' id='btn-stack-need-account' spacing={4} justifyContent='center'>
         <Link to='/login'><Button variant='contained' id='login-btn'>Log In</Button></Link>
         <Link to='/signup'> <Button variant='contained' id='signup-btn'>Sign Up</Button></Link>
       </Stack>
       <img src={devilHorns} alt='devil horns' id='devil-horn-error-img'/>
+      </div>
     </>
     );
   }

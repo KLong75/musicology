@@ -1,14 +1,4 @@
 /* whole app css */
-/* * {
-  box-sizing: border-box;
-} */
-
-/* div {
-  display: block;
-} */
-
-
-
 .font-link {
   font-family: 'Permanent Marker';
 }
@@ -19,7 +9,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-
 
 html, #root {
   min-height: 100%; 
@@ -34,6 +23,10 @@ main {
    margin: 2rem;
 
 }  
+
+#no-exist-div {
+  text-align: center;
+}
 
 /* Landing Page */
 @media (prefers-reduced-motion: no-preference) {
@@ -53,7 +46,6 @@ main {
 
 .App-logo {
   height: 30vmin;
-  pointer-events: none;
 }
 
 #trumpet {
@@ -68,19 +60,20 @@ main {
 
 #drums{
   animation-direction: reverse;
-  height: 36vmin;
+  height: 34vmin;
 }
 
 #keyboard{
-  height: 30vmin; 
+  height: 28vmin; 
 }
 
 #guitar{
-  height: 30vmin;
+  height: 28vmin;
 }
 
 #trombone{
   animation-direction: reverse;
+  height: 28vmin;
 }
 
 #title-div {
@@ -88,7 +81,20 @@ main {
 }
 
 #app-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+#app-subtitle {
+  font-size: 1.5rem;
+}
+
+#top-instrument-row {
+  margin-top: 1rem;
+}
+
+#bottom-instrument-row {
+  margin-top: 2.2rem;
 }
 
 /*landing page end***********************/
@@ -232,9 +238,16 @@ header {
 
 /* Profile Page */
 #devil-horn-error-img {
-  height: 32vmin;
+  height: 28vmin;
   margin-top: 6rem;
-  margin-left: 10rem
+}
+
+#need-account-div {
+  text-align: center;
+}
+
+#btn-stack-need-account {
+  margin-top: 2rem;
 }
 
 #user-data-card {
