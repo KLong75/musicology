@@ -14,7 +14,7 @@ import Stack from '@mui/material/Stack';
 const LandingPage = () => {
   return (
     <>
-      <Stack direction={{ xs: 'column', sm: 'row' }} id='' spacing={6} justifyContent='space-evenly' alignItems='center' >
+      <Stack direction={{ xs: 'column', sm: 'row' }} id='top-instrument-row' spacing={6} justifyContent='space-evenly' alignItems='center' >
         <img src={trumpet} className="App-logo " id='trumpet' alt='trumpet' /> 
         <img src={guitar} className="App-logo"  id='guitar' alt="guitar"/> 
         <img src={trombone} className="App-logo"  id='trombone' alt='trombone'/> 
@@ -26,11 +26,12 @@ const LandingPage = () => {
       </Stack>
 
       <Stack direction='row' id='landing-btn-stack' spacing={2} justifyContent='center'>
-        <Link to='/login'><Button variant='contained' id='login-btn'>Log In</Button></Link>
-        <Link to='/signup'> <Button variant='contained' id='signup-btn'>Sign Up</Button></Link>
+        <Link to='/login'><Button variant='contained' id='login-btn' size='small'>Log In</Button></Link>
+        <Link to='/signup'> <Button variant='contained' id='signup-btn' size='small'>Sign Up</Button></Link>
+        <Link to='/bulletin_board'> <Button variant='contained' id='bulletin_board-btn' size='small'>Visit</Button></Link>
       </Stack>
      
-      <Stack direction={{ xs: 'column', sm: 'row' }} id='' spacing={6} justifyContent='space-evenly' alignItems='center'>
+      <Stack direction={{ xs: 'column', sm: 'row' }} id='bottom-instrument-row' spacing={6} justifyContent='space-evenly' alignItems='center'>
         <img src={keyboard} className="App-logo"  id='keyboard' alt='keyboard'/> 
         <img src={drums2} className="App-logo" id='drums' alt='drumset' /> 
         <img src={bass} className="App-logo"  id='bass' alt='bass guitar'/> 
