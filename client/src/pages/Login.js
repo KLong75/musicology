@@ -50,7 +50,7 @@ const Login = () => {
             <TextField required className="m-2 col-auto col-md-5" id="login-pw" type='password' placeholder='******' value={formState.password} label="Password"  name='password' variant="filled" onChange={handleChange} />
             {error ? (
 
-                <span className="error-text font-link">Dude, the login info you entered was bogus. Please try again.</span>
+                <span className="error-text font-link" id='log-in-error'>Dude, the login info you entered was bogus. Please try again.</span>
                 
             ) : null}
             <div className="flex-row flex-end"></div>

@@ -17,31 +17,31 @@ const Header = () => {
     <header className='font-link'>  
 
     <div className='' id='header-box'>
-      <h1 className='font-link' id='header-title'>MUSICOLOGY</h1>
+    <Link to='/' id='header-title-link'> <h1 className='font-link' id='header-title-text'>MUSICOLOGY</h1></Link>
         <p className='font-link'>For Those About to Rock</p>  
 
       <nav className=''>
         {Auth.loggedIn() ? (
           <>
           <Stack direction='row' id='btn-stack' spacing={1} justifyContent='right'>
-            
-            <img src={guitar} alt='' id='header-icon' />
+            <img src={guitar} alt='guitar' id='header-icon' />
             <Link to='/profile'>My Profile</Link>
-            <img src={devilHorns} alt='' id='header-icon' />
+            <img src={devilHorns} alt='rock devil horns' id='header-icon' />
             <Link to='/bulletin_board'>Bulletin Board</Link>
-            {/* <Link to='/update_profile'>Update Profile</Link> */}
-            <img src={guitar} alt='' id='header-icon' />
+            <img src={guitar} alt='guitar' id='header-icon' />
             <a href='/' onClick={logout}>
               Logout
             </a>
-            {/* <img src={mic} alt='' id='header-icon' /> */}
           </Stack>
           </>
         ) : (
           <>
             <Stack direction='row' id='btn-stack' spacing={4} justifyContent='right'>
+              <img src={guitar} alt='guitar' id='header-icon' />
               <Link to='/login'>Login</Link>
+              <img src={devilHorns} alt='rock devil horns' id='header-icon' />
               <Link to='/signup'>Signup</Link>
+              <img src={guitar} alt='guitar' id='header-icon' />
             </Stack>
           </>
         )}

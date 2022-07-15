@@ -16,13 +16,15 @@ html, #root {
 }  
 
 main {
-   /* background-color: #e1e8eb;  */
    position: relative;  
    display: flex;      
-   /* background-color: grey;  */
    margin: 2rem;
 
 }  
+
+#no-exist-div {
+  text-align: center;
+}
 
 /* Landing Page */
 @media (prefers-reduced-motion: no-preference) {
@@ -40,11 +42,6 @@ main {
   }
 }
 
-.App-logo {
-  height: 30vmin;
-  pointer-events: none;
-}
-
 #trumpet {
   height: 14vmin;
   pointer-events: none;
@@ -57,19 +54,20 @@ main {
 
 #drums{
   animation-direction: reverse;
-  height: 36vmin;
+  height: 34vmin;
 }
 
 #keyboard{
-  height: 30vmin; 
+  height: 28vmin; 
 }
 
 #guitar{
-  height: 30vmin;
+  height: 28vmin;
 }
 
 #trombone{
   animation-direction: reverse;
+  height: 28vmin;
 }
 
 #title-div {
@@ -77,7 +75,20 @@ main {
 }
 
 #app-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+#app-subtitle {
+  font-size: 1.5rem;
+}
+
+#top-instrument-row {
+  margin-top: 1rem;
+}
+
+#bottom-instrument-row {
+  margin-top: 2.2rem;
 }
 
 /*landing page end***********************/
@@ -86,22 +97,12 @@ main {
 /*Sign Up and Login Pages****************************************/
 /* Forms */
 form {
-  /* background-color: var(--secondary); */
-  /* justify-content: center;  */
   align-content: center;
   position: relative;
   display: flex; 
   flex-wrap: wrap;  
 }  
 
-/* .form-input {
-  justify-content: center;
-} */
-
-/* form {
-  position: relative;
-  background-color: #53B1B1; 
-}  */
 
 #btn {
   justify-content: center;
@@ -122,6 +123,10 @@ form {
   text-align: center;
   position: relative;
 }  
+
+#log-in-error{
+  text-align: center;
+}
 /* end Sign Up and Log in Pages ****************************************************/
 
 /*Header component*/
@@ -132,15 +137,18 @@ header {
   margin-right: 2rem;
 }
 
-#header-title {
-  font-size: 3rem; 
+#header-title-link {
+  text-decoration: none;
+  color: black;
+}
+#header-title-text {
+  font-size: 4rem;
 }
 
 #header-icon {
   height: 4vmin;
 }
 /* end Header component******************************************************************/
-
 
 
 /*HeaderTitleOnlycomponent*/
@@ -153,14 +161,12 @@ header {
 /* end HeaderTitleOnly component******************************************************************/
 
 
-
 /*Bulletin Board Page */
 #end-of-board-tag {
   text-align: center;
 }
 
 /* end Bulletin Board Page******************************************************************/
-
 
 /* Single Post Page */
 #single-post-box {
@@ -221,9 +227,16 @@ header {
 
 /* Profile Page */
 #devil-horn-error-img {
-  height: 32vmin;
+  height: 28vmin;
   margin-top: 6rem;
-  margin-left: 10rem
+}
+
+#need-account-div {
+  text-align: center;
+}
+
+#btn-stack-need-account {
+  margin-top: 2rem;
 }
 
 #user-data-card {
@@ -233,7 +246,6 @@ header {
 #user-project-card {
   border: solid;
 }
-
 #profile-post-list-box {
   border: solid;
 }
@@ -269,71 +281,10 @@ footer {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 
-  #trumpet {
-    height: 12vmin;
-    pointer-events: none;
-    animation-direction: reverse;
-  }
-  
-  #bass{
-    height: 34vmin;
-  }
-  
-  #drums{
-    animation-direction: reverse;
-    height: 34vmin;
-  }
-  
-  #keyboard{
-    height: 30vmin; 
-  }
-  
-  #guitar{
-    height: 28vmin;
-  }
-  
-  #trombone{
-    animation-direction: reverse;
-    height: 24vmin;
-  }
-  
-  #title-div {
-    text-align: center;
-  }
-  
-  #app-title {
-    font-size: 4rem;
+  #header-title-text {
+    font-size: 3rem;
   }
 
-  #app-subtitle {
-    font-size: 1.8rem;
-  }
-
-
-  #footer-guitar {
-    height: 6vmin;
-  }
-  
-  #footer-drums {
-    height: 6vmin;
-  }
-  
-  #footer-tag {
-    font-size: .8rem;
-  }
-
-  #copy-write{
-    font-size: small;
-  }
-
-  #profile-post-list-box {
-    border: 0em;
-  }
- 
-}
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
 
 
   #trumpet {
@@ -352,7 +303,7 @@ footer {
   }
   
   #keyboard{
-    height: 28vmin; 
+    height: 24vmin; 
   }
   
   #guitar{
@@ -361,7 +312,72 @@ footer {
   
   #trombone{
     animation-direction: reverse;
-    height: 22vmin;
+    height: 20vmin;
+  }
+  
+  #title-div {
+    text-align: center;
+  }
+  
+  #app-title {
+    font-size: 4rem;
+  }
+
+  #app-subtitle {
+    font-size: 1.8rem;
+  }
+
+  #footer-guitar {
+    height: 6vmin;
+  }
+  
+  
+  #footer-tag {
+    font-size: .8rem;
+  }
+
+  #copy-write{
+    font-size: small;
+  }
+
+  #profile-post-list-box {
+    border: 0em;
+  }
+ 
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+  #header-title-text {
+    font-size: 2.8rem;
+  }
+ 
+  #trumpet {
+    height: 8vmin;
+    animation-direction: reverse;
+  }
+  
+  #bass{
+    height: 26vmin;
+  }
+  
+  #drums{
+    animation-direction: reverse;
+    height: 28vmin;
+  }
+  
+  #keyboard{
+    height: 20vmin; 
+  }
+  
+  #guitar{
+    height: 20vmin;
+  }
+  
+  #trombone{
+    animation-direction: reverse;
+    height: 18vmin;
   }
   
   #title-div {
@@ -380,10 +396,6 @@ footer {
     height: 4vmin;
   }
   
-  #footer-drums {
-    height: 6vmin;
-  }
-  
   #footer-tag {
     font-size: .8rem;
   }
@@ -391,9 +403,7 @@ footer {
   #copy-write{
     font-size: small;
   }
-
 }
-
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 605PX) {
@@ -452,12 +462,6 @@ footer {
   #copy-write{
     font-size: x-small;
   }
-
-
-
-
 }
-
-
 
 
