@@ -1,25 +1,57 @@
 {
-    "short_name": "MUSICOLOGY",
-    "name": "MUSICOLOGY",
-    "icons": [
-      {
-        "src": "favicon.ico",
-        "sizes": "64x64 32x32 24x24 16x16",
-        "type": "image/x-icon"
+  "short_name": "MUSICOLOGY",
+  "name": "MUSICOLOGY",
+  "description":"A musician networking app for those about to rock",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+        "src": "./icons/guitar-icon72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
       },
       {
-        "src": "guitarlogo192.png",
+        "src": "./icons/guitar-icon96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "./icons/guitar-icon128x128.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      },
+      {
+        "src": "./icons/guitar-icon144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "./icons/guitar-icon152x152.png",
+        "type": "image/png",
+        "sizes": "152x152"
+      },
+      {
+        "src": "./icons/guitar-icon192x192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "logo512.png",
+        "src": "./icons/guitar-icon384x384.png",
+        "type": "image/png",
+        "sizes": "384x384"
+      },
+      {
+        "src": "./icons/guitar-icon512x512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
-    ],
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
-  }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#e1e2e3",
+  "background_color": "#e1e2e3",
+  "id": "./"
+}
