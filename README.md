@@ -3,6 +3,7 @@
 ![license badge!](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
+React | Node | MongoDB | Express
 MUSICOLOGY is a networking application for musicians built for mobile and desktop devices. Users can sign up to create an account and a profile. Users can post on the bulletin board offering their services or seeking the services of other musician members. Finding reliable, quality musicians to fill that empty spot in your band, record on your new record, or play your next big gig is a challenge that drains your resources and takes up valuable time. MUSICOLOGY answers that challenge by connecting you with quality musicians in your local area. MUSICOLOGY is a full stack MERN Single Page Application (SPA). In addition to MongoDB, Express, REACT, and Node.js, MUSICOLGY is built with GraphQL, Mongoose, Bootstrap, Materials UI, bcrypt, Apollo, and REACT router. User authentication is handled with JSON web tokens (JWT).
 
 ## URL of Deployed Application
